@@ -24,7 +24,15 @@
         #edit_tab{
             display: flex;
             flex-direction: column;
-            margin-left: 28px;
+            margin-left: 14px;
+        }
+
+        .spacingDown{
+            margin-bottom: 19px;
+        }
+
+        .spacingUp{
+            margin-top: 19px;
         }
 
     </style>
@@ -80,7 +88,43 @@
 
                 <td id="edit_tab">
                     <h1>Assignment Name</h1>
-                    <input type="text" placeholder="A1 - ENV + HTML">
+                    <input type="text" placeholder="A1 - ENV + HTML" style="margin-bottom: 19px;">
+
+                    <form id="textarea" margin-bottom: 19px;>
+                        <textarea cols="30" rows="2">This is the assignment description</textarea>
+                    </form>
+
+                    <label class="spacingUp"> Points</label>
+                    <input  type="number">
+
+                    <label class="spacingUp"> Assignment Group</label>
+                    <select>
+                        <option value="op_1">ASSIGNMENTS</option>
+                    </select>
+
+                    <label class="spacingUp""> Display Grade as</label>
+                    <select>
+                        <option value="op_2">Percentage</option>
+                    </select>
+
+                    <label class="spacingUp">Submission Type</label>
+                    <select>
+                        <option value="op_3">Online</option>
+                    </select>
+
+                    <div class="spacingUp">
+
+                    <label > Online Entry Options</label>
+                    <br/>
+                    <input type="checkbox" value="text" name="entry-options" id="text-entry">
+                    <label for="text-entry">Text Entry</label><br/>
+                    <input type="checkbox" value="text" name="entry-options" id="web-url">
+                    <label for="web-url">Website Url</label><br/>
+
+                        
+                    </div>
+
+
                 </td>
 
             </tr>
