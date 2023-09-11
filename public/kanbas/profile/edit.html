@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Edit Profile</title>
     <style>
         #nav_tab{
             display: flex;
@@ -27,6 +27,13 @@
         #profile_tab{
             display: flex;
             flex-direction: column;
+            width: 411px;
+            margin-left: 28px;
+        }
+        #body_space{
+            display: flex;
+            width: 109%;
+            margin-left: 1px;
         }
 
 
@@ -36,7 +43,7 @@
 <body>
     <table width="50%">
         <tbody>
-            <tr valign="baseline">
+            <tr valign="baseline" id="body_space">
             <td  id="nav_tab">
                 <li><a href="">Account</a></li>
                 <li><a href="">Dashboard</a></li>
@@ -64,14 +71,28 @@
 
 
                 <td id="profile_tab">
-                    <p>Mattia Contestabile's Profile</p>
-                    <hr style="width:390px;text-align:left;margin-left: 2px;"> 
-                    <div style="margin-top: 22px;">
-                        <p style="display: inline; font-size: x-large;">Mattia Contestabile
-                            <button onclick="window.location.href='http://localhost:3000/kanbas/profile/edit.html'" style="display: inline; margin-left: 150px;">✎ Edit Profile</button>    
-                        <p> 
+                    <div>
+                        
+                        <p>Mattia Contestabile</p>
+                        <form id="text-fields">
+                            <label for="text-fields-name" style="display: inline;">Name:*</label>
+                            <input id="text-fields-name" style="display: inline;">
+                            <label for="text-fields-pronouns" style="display: inline;">Pronouns</label>
+                            <select >
+                                <option value="val1">He/him</option>
+                                <option value="val2">She/Her</option>
+                                <option value="val3">They/Them</option>
+                                <option value="val4">None</option>
+                            </select><br/>
+                            <label for="text-fields-title">Title</label>
+                            <input id="text-fields-title">
+                        </form>
                         <p style="font-size: larger;">Contact</p>
                         <p style="font-size: smaller;">No registered services, you can add  some on the <a href="#">settings</a> page</p>
+                        <p style="font-size: larger;">Contact</p>
+                        <p style="font-size: smaller;">No registered services, you can add  some on the <a href="#">settings</a> page</p>
+
+
                     </div>
 
 
