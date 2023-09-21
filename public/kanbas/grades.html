@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+
+
+    <style>
+        #td_nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* margin-top: 41px; */
+            margin-left: 20px;
+        }
+        #nav_tab{
+            display: flex;
+            flex-direction: column;
+            margin-left: 13px;
+            width: 88px;
+        }
+
+        #td_{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 20px;
+        }
+        #selection_tab{
+            display: flex;
+            margin-left: 20px;
+        }
+        #student_tab{
+            display: flex;
+            flex-direction: column;
+            margin-left: 28px;
+        }
+        #filter_btn{
+            margin-top: 20px;
+            width: 102px;
+        }
+        #student_btn{
+            width: 183px;
+        }
+
+        #assignment_btn{
+            width: 183px;
+        }
+        .spacingDown{
+            margin-bottom: 19px;
+        }
+
+    </style>  
+
+</head>
+<body>
+
+    <table  width="100%">
+
+        <tbody >
+
+            <tr valign="baseline">
+                <td  id="nav_tab">
+
+                    <li><a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/account">Account</a></li>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/home">Courses</a></li>
+                    <li><a href="">Calendar</a></li>
+                    <li><a href="">Inbox</a></li>
+                    <li><a href="">History</a></li>
+                    <li><a href="">Studio</a></li>
+                    <li><a href="">Commons</a></li>
+                    <li><a href="">Help</a></li>
+                </td>
+
+                <td  >
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Modules</a></li>
+                    <li><a href="">Piazza</a></li>
+                    <li><a href="">Zoom Meetings</a></li>
+                    <li><a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/assignments/">Assignments</a></li>
+                    <li><a href="">Quizzes</a></li>
+                    <li><a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/grades.html">Grades</a></li>
+                    <li><a href="">People</a></li>
+                    <li><a href="">Panopto Video</a></li>
+                    <li><a href="">Discussions</a></li>
+                    <li><a href="">Announcements</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Files</a></li>
+                    <li><a href="">Rubrics</a></li>
+                    <li><a href="">Outcomes</a></li>
+                    <li><a href="">Collaborations</a></li>
+                    <li><a href="">Syllabus</a></li>
+                    <li><a href="">Settings</a></li>
+                </td>
+
+                <td id="selection_tab">
+                    <select>
+                        <option value="item1">Gradebook</option>
+                        <option value="item2">Gradebook Demo</option>
+                    </select>
+                    <button>Import</button>
+                    <select>
+                        <option value="item3">Export</option>
+                        <option value="item4">NaN</option>
+                    </select>
+                    <button>Configure</button>
+
+                </td>
+    
+
+                <td id="student_tab">
+                    <h1>Student Names</h1>
+                    <input type="text" placeholder="Search Students" id= "student_btn">
+                    <h1>Assignments Names</h1>
+                    <input type="text" placeholder="Search Assignments" id="assignment_btn">
+                    <div class="spacingDown">
+                        <button id="filter_btn">Apply Filters</button> 
+                    </div>
+
+
+                    <table border="1" width="100%">
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>A1 SETEUP Out of 100</th>
+                                <th>A2 HTML Out of 100</th>
+                                <th>A3 CSS Out of 100</th>
+                                <th>A4 BOOTSTRAP Out of 100</th>
+                                <th>A5 JAVASCRIPT Out of 100</th>
+                                <th>A6 REACT Out of 100</th>
+                                <th>A7 REDUX Out of 100</th>
+                                <th>A8 NODE Out of 100</th>
+                                <th>A8 MONGO Out of 100</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alice Wonderland</td>
+                                <td>98</td>
+                                <td>89</td>
+                                <td>87</td>
+                                <td>90</td>
+                                <td>89</td>
+                                <td>94</td>
+                                <td>88</td>
+                                <td>87</td>
+                                <td>100</td>
+                            </tr>
+                            <tr>
+                                <td>Princes Lea</td>
+                                <td>98</td>
+                                <td>80</td>
+                                <td>87</td>
+                                <td>86</td>
+                                <td>100</td>
+                                <td>94</td>
+                                <td>85</td>
+                                <td>84</td>
+                                <td>92</td>
+                            </tr>
+                            <tr>
+                                <td>Luke Skywalker</td>
+                                <td>99</td>
+                                <td>88</td>
+                                <td>97</td>
+                                <td>82</td>
+                                <td>96</td>
+                                <td>93</td>
+                                <td>95</td>
+                                <td>100</td>
+                                <td>93</td>
+                            </tr>
+                            <tr>
+                                <td>Hans Solo</td>
+                                <td>83</td>
+                                <td>99</td>
+                                <td>94</td>
+                                <td>98</td>
+                                <td>86</td>
+                                <td>85</td>
+                                <td>86</td>
+                                <td>80</td>
+                                <td>84</td>
+                            </tr>
+                            <tr>
+                                <td>Lando Carlesian</td>
+                                <td>83</td>
+                                <td>92</td>
+                                <td>80</td>
+                                <td>80</td>
+                                <td>80</td>
+                                <td>92</td>
+                                <td>94</td>
+                                <td>87</td>
+                                <td>85</td>
+                            </tr>
+                            <tr>
+                                <td>Boba Fet</td>
+                                <td>85</td>
+                                <td>89</td>
+                                <td>94</td>
+                                <td>83</td>
+                                <td>83</td>
+                                <td>84</td>
+                                <td>87</td>
+                                <td>96</td>
+                                <td>92</td>
+                            </tr>
+                            <tr>
+                                <td>Darth Vader</td>
+                                <td>98</td>
+                                <td>80</td>
+                                <td>87</td>
+                                <td>86</td>
+                                <td>100</td>
+                                <td>94</td>
+                                <td>85</td>
+                                <td>84</td>
+                                <td>92</td>
+                            </tr>
+                            <tr>
+                                <td>Obi-Wan Kenobi</td>
+                                <td>98</td>
+                                <td>80</td>
+                                <td>87</td>
+                                <td>86</td>
+                                <td>100</td>
+                                <td>94</td>
+                                <td>85</td>
+                                <td>84</td>
+                                <td>92</td>
+                            </tr>
+                            <tr>
+                                <td>R2-D2</td>
+                                <td>98</td>
+                                <td>80</td>
+                                <td><input type="text" placeholder="insert grade"></td>
+                                <td>86</td>
+                                <td>100</td>
+                                <td>94</td>
+                                <td>85</td>
+                                <td>84</td>
+                                <td>92</td>
+                            </tr>
+                            <tr>
+                                <td>C-3PO</td>
+                                <td>98</td>
+                                <td>80</td>
+                                <td>87</td>
+                                <td>86</td>
+                                <td>100</td>
+                                <td>94</td>
+                                <td>85</td>
+                                <td>84</td>
+                                <td>92</td>
+                            </tr>
+                            <tr>
+                                <td>YODA</td>
+                                <td>98</td>
+                                <td>80</td>
+                                <td><input type="text"></td>
+                                <td>86</td>
+                                <td>100</td>
+                                <td>94</td>
+                                <td>85</td>
+                                <td>84</td>
+                                <td>92</td>
+                            </tr>
+                            <tr>
+                                <td>Admiral Ackbar</td>
+                                <td>98</td>
+                                <td>80</td>
+                                <td>87</td>
+                                <td>86</td>
+                                <td>100</td>
+                                <td>94</td>
+                                <td>85</td>
+                                <td>84</td>
+                                <td>92</td>
+                            </tr>
+                    
+                    
+                        </tbody>
+                    
+                    </table>
+                </td>
+
+
+
+
+            </tr>
+
+
+
+
+
+
+        </tbody>
+
+    </table>
+
+
+ 
+    
+</body>
+</html>
+

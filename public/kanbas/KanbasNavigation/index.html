@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanbas Navigation</title>
+    <style>
+        #nav_tab{
+            display: flex;
+            flex-direction: column;
+            margin-left: 13px;
+            width: 88px;
+        }
+
+        #selection_tab{
+            display: flex;
+            margin-left: 20px;
+        }
+        #divisor{
+            display: flex;
+            margin-left: -3px;
+        }
+
+        #edit_tab {
+            display: flex;
+            flex-direction: column;
+            margin-left: 144px;
+            margin-top: -353px;
+        }
+
+        .spacingDown{
+            margin-bottom: 19px;
+        }
+
+        .spacingUp{
+            margin-top: 19px;
+        }
+
+        #td_nav {
+          display: flex;
+         flex-direction: column;
+          margin-left: 8px;
+            }
+
+
+
+    </style>
+</head>
+<body>
+
+    <table width="50%">
+        <tbody>
+            <tr valign="baseline">
+                <td id="td_nav" >
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Modules</a></li>
+                    <li><a href="">Piazza</a></li>
+                    <li><a href="">Zoom Meetings</a></li>
+                    <li><a href="http://localhost:3000/kanbas/assignments/">Assignments</a></li>
+                    <li><a href="">Quizzes</a></li>
+                    <li><a href="http://localhost:3000/kanbas/grades.html">Grades</a></li>
+                    <li><a href="">People</a></li>
+                    <li><a href="">Panopto Video</a></li>
+                    <li><a href="">Discussions</a></li>
+                    <li><a href="">Announcements</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Files</a></li>
+                    <li><a href="">Rubrics</a></li>
+                    <li><a href="">Outcomes</a></li>
+                    <li><a href="">Collaborations</a></li>
+                    <li><a href="">Syllabus</a></li>
+                    <li><a href="">Settings</a></li>
+                </td>
+
+                <td id="edit_tab">
+                    <h1>Navigation</h1>
+
+                    <div>
+                        <table width="50%" border="1">
+                            <thead>
+                                <tr>
+                                    <td>
+                                        <label> <b>Home</b></label>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Modules</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label>Piazza</label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label>Zoom Meetings</label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label> Assignments</label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label >Quizzes</label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label>Grades</label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label>People</label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <label>Panopto Video</label>
+                                    </td>
+                                </tr>
+                            </thead>
+                        </table>
+                        <div>
+
+                            <tr style="display: flex; margin-left: 143px;">
+                                <div>
+                                    <td>
+                                        <label>Drag items here to hide them from students.</label><br/>
+                                        <label>Disabling most pages will cause students who visit those pages to be redirected <br/> to the course home page.</label>
+                                    </td>
+                                </div>
+                            </tr>
+
+                        </div>
+
+                        <div>
+                            <table width="50%" border="1" style="margin-left: 145px; width: 323px">
+                                <thead>
+                                    <tr>
+                                        <td>
+                                            <label> <b>Chat</b></label><br/>
+                                            <label> Page disables, won't appear in navigation</label>
+    
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>SCORM</label><br/>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label>Attendance</label><br/>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>
+                                            <label>Barnes and Noble Bookstore</label> <br/>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>
+                                            <label>Dictation</label><br/>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>
+                                            <label>Top Hat</label><br/>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>
+                                            <label>Syllabus</label><br/>
+                                            <label>Page disabled, will redirect to course home page</label>
+                                        </td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>
+                                            <label><b>Perusall</b></label><br/>
+                                            <label>Page disabled, won't appean in navigation</label>
+                                        </td>
+                                    </tr>
+    
+                                    <tr>
+                                        <td>
+                                            <label>Microsoft Teams Meetings</label><br/>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <label>FACT Reporting and Photo Roster</label><br/>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <label>Progress Reports (Navigate)</label>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <label>Microsoft Teams for Canvas</label><br/>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <label>VHL Central</label><br/>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <label>Gradescope 1.3</label><br/>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <label>Credentials</label><br/>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <label>iClicker</label><br/>
+                                            <label>Page disabled, won't appear in navigation</label>
+                                        </td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </td>
+        </tbody>
+    </table>
+    <div style="display: flex; margin-left: 145px; margin-top: 16px;">
+        <td>
+            <button>Save</button>    
+        </td>
+    </div>
+
+    
+</body>
+</html>
