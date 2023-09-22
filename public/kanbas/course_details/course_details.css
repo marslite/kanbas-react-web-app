@@ -1,0 +1,43 @@
+#nav_tab{
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+    width: 88px;
+}
+
+#selection_tab{
+    display: flex;
+    margin-left: 20px;
+}
+#divisor{
+    display: flex;
+    margin-left: -3px;
+}
+
+
+
+
+
+#edit_tab {
+    display: flex;
+    flex-direction: column;
+    margin-left: 144px;
+    margin-top: -70rem;
+}
+
+.spacingDown{
+    margin-bottom: 19px;
+}
+
+.spacingUp{
+    margin-top: 19px;
+}
+
+
+#td_nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    width: 126px;
+    height: 70rem;
+}
