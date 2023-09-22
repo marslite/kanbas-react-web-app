@@ -1,0 +1,4 @@
+#nav_tab{
+    display: flex;
+    flex-direction: column;
+}
