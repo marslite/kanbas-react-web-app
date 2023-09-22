@@ -1,7 +1,4 @@
 
-
-
-
 #nav_tab {
     display: flex;
     flex-direction: column;
@@ -46,4 +43,43 @@
     margin-left: 17rem;
     margin-top: -39rem;
     width: 45rem;
+}
+
+#e_nav_tab {
+    display: flex;
+    flex-direction: column;
+    /*! margin-left: 13px; */
+    /*! width: 155px; */
+}
+
+#e_name_tag{
+    display: flex;
+    margin-left: 20px
+}
+#e_divisor{
+    display: flex;
+    margin-left: -3px;
+}
+
+.spacingUp{
+    margin-top: 19px;
+}
+
+#e_profile_tab {
+    display: flex;
+    flex-direction: column;
+    width: 461px;
+    margin-left: 6px;
+}
+
+#e_body_space{
+    display: flex;
+    width: 109%;
+    margin-left: 1px;
+}
+
+#e_nav_tab2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;      
 }
