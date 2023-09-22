@@ -19,8 +19,6 @@
     flex-direction: column;
     margin-left: 144px;
     margin-top: -353px;
-    height: 20rem;
-    width: 31rem;
 }
 
 .spacingDown{
@@ -31,13 +29,8 @@
     margin-top: 19px;
 }
 
-
-
-
-#td_nav{
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-    width: 121px;
-    height: 58rem;
-}
+#td_nav {
+  display: flex;
+ flex-direction: column;
+  margin-left: 8px;
+    }
