@@ -1,0 +1,54 @@
+
+
+#td_nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-left: 20px;
+    width: 82px;
+    /*! border: solid; */
+    /*! height: 41rem; */
+}
+
+
+
+#td_nav2 {
+    display: flex;
+    flex-direction: column;
+    /*! justify-content: space-between; */
+    margin-top: -12rem;
+    margin-left: 132px;
+    /*! border: solid; */
+    width: 109px;
+    /*! height: 40rem; */
+}
+
+
+
+
+#top-nav{
+    display: flex;
+    flex-direction: column;
+}
+
+#wd-flex{
+    display: flex;
+}
+
+
+#content-margin{
+    margin-left: 45px;
+}
+
+#course-nav{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: -23px; */
+}
+
+#coming-nav{
+    display: flex;
+    flex-direction: column;
+    margin-top: -21px;
+}
