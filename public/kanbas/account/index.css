@@ -2,8 +2,14 @@
     display: flex;
     flex-direction: column;
     margin-left: 1px;
-    width: 88px;
+    width: 113px;
     background-color: black;
+}
+
+
+#nav_tab a{
+    text-decoration: none;
+    color: red;
 }
 #name_tag{
     display: flex;
@@ -27,15 +33,27 @@
 }
 
 
-#nav_tab2{
-display: flex;
-flex-direction: column;
-margin-left: 103px;
-margin-top: -176px;     
-background-color: black; 
-width: 121px;
+#nav_tab2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1px;
+    background-color: black; 
+    width: 124px;
+    background-color: antiquewhite;
+
 }
+
+#nav_tab2 a{
+    text-decoration: none;
+    color: red;
+}
+
 
 wd-link{
     color: white;
+}
+
+
+wd-flex{
+    display: flex;
 }

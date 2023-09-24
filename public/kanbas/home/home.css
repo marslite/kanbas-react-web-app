@@ -1,15 +1,19 @@
 
 
+
+
 #td_nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 5px;
-    margin-left: 20px;
+    margin-top: 1rem;
+    margin-left: 10px;
     width: 82px;
     /*! border: solid; */
-    /*! height: 41rem; */
+    height: 11rem;
 }
+
+
 
 
 
@@ -17,13 +21,12 @@
     display: flex;
     flex-direction: column;
     /*! justify-content: space-between; */
-    margin-top: -12rem;
+    margin-top: -11rem;
     margin-left: 132px;
     /*! border: solid; */
     width: 109px;
     /*! height: 40rem; */
 }
-
 
 
 
