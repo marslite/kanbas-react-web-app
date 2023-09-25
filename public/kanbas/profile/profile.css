@@ -1,11 +1,13 @@
 
-
 #nav_tab {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
     width: 97px;
+}
 
+#nav_tab a {
+    margin-bottom: 5px;
 }
 
 
@@ -16,6 +18,10 @@
 #divisor{
     display: flex;
     margin-left: -3px;
+}
+
+.spacer{
+    margin-bottom: 5px;
 }
 
 .spacingUp{
@@ -44,30 +50,12 @@
     color: red;
 }
 
-
-
-
-
-  
-
-
-
-  /* #nav2_tab {
-    display: flex;
-    flex-direction: column;
-    height: 45rem;
-    margin-left: 5px;
-    margin-top: -2px;
-  } */
-
   #nav2_tab {
     display: flex;
     flex-direction: column;
     height: 45rem;
     margin-left: 5px;
     margin-top: 64px;
-    /*! margin-bottom: -12rem; */
-    /*! height: 44px; */
     margin-top: 58px;
   }
 
@@ -76,31 +64,24 @@
     text-decoration: none;
     text-align: left;
     word-wrap: break-word;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    padding: 5px;
   }
 
   
-  /* #nav_t {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1px;
-    background: wheat;
-    width: 190px;
-  } */
+
 
   #nav_t {
-    /*! display: flex; */
-    /*! flex-direction: column; */
     margin-top: 22px;
-    /*! background: wheat; */
     width: 190px;
   }
 
   #nav_tab a{
     text-decoration: none;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
-
 
 
 
@@ -116,14 +97,6 @@
 
 
 
-
-
-/* #profile_tab {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-}
- */
 
 
 #e_nav_tab {
@@ -175,7 +148,6 @@
     margin-bottom: -26px;
     margin-top: 16px;
 }
-
 
 
 #profile_divisor p{
