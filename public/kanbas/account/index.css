@@ -1,16 +1,21 @@
-#nav_tab{
+
+
+#nav_tab {
     display: flex;
     flex-direction: column;
-    margin-left: 1px;
-    width: 113px;
-    background-color: black;
+    margin-right: 20px;
+    width: 97px;
+}
+
+/* #nav_tab a i{
+    margin-bottom: 5px;
+} */
+
+.spacer{
+    margin-bottom: 5px;
 }
 
 
-#nav_tab a{
-    text-decoration: none;
-    color: red;
-}
 #name_tag{
     display: flex;
     margin-left: 20px
@@ -22,38 +27,88 @@
 
 .spacingUp{
     margin-top: 19px;
+    border-left: gray;
 }
+
+#acc_id{
+    background-color: white;
+    color: red;
+
+}
+
+#prof_id{
+    color: black;
+    background-color: white;
+    border-left: 3px solid;
+    margin-left: -4px;
+    padding-left: 9px;
+}
+
+.link_dec{
+    color: white;
+}
+
+.link_nav2_dec{
+    color: red;
+}
+
+  #nav2_tab {
+    display: flex;
+    flex-direction: column;
+    height: 45rem;
+    margin-left: 5px;
+    margin-top: 64px;
+    margin-top: 58px;
+  }
+
+
+  #nav2_tab a{
+    text-decoration: none;
+    text-align: left;
+    word-wrap: break-word;
+    margin-bottom: 15px;
+  }
+
+  
+
+
+  #nav_t {
+    margin-top: 22px;
+    width: 190px;
+  }
+
+  #nav_tab a{
+    text-decoration: none;
+    /* text-align: left; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
 
 #profile_tab {
     display: flex;
     flex-direction: column;
-    margin-left: 283px;
-    margin-top: -241px;
-    background-color: white;
+    /* margin-top: 0rem; */
+    margin-top: -12px;
+
+    margin-left: 23px;
 }
 
 
-#nav_tab2 {
+#profile_divisor {
     display: flex;
-    flex-direction: column;
-    margin-left: 1px;
-    background-color: black; 
-    width: 124px;
-    background-color: antiquewhite;
+    flex-direction: column;  
 
+    margin-left: -226px;
+    margin-bottom: -26px;
+    margin-top: 16px;
 }
 
-#nav_tab2 a{
+
+#profile_divisor p{
     text-decoration: none;
-    color: red;
 }
-
-
-wd-link{
-    color: white;
-}
-
-
-wd-flex{
-    display: flex;
-}
+  

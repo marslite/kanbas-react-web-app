@@ -4,49 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
-    <link  href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <link rel="stylesheet" href="../account/index.css">
+    <link rel="stylesheet" href="../../kanbas/account/index.css">
+    <link  href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../vendors/fontawesome/css/all.css">
 
 </head>
 <body>
-    <table width="100%" style="display: flex; height: 60rem; border: solid;">
+    <table width="100%" border="3" style="display: flex;">
         <tbody style="display: flex;">
             <tr valign="baseline" style="display: flex;">
-            <td  id="nav_tab">
-                <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/account">Account</a>
-                <a href="">Dashboard</a>
-                <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/home">Courses</a>
-                <a href="">Calendar</a>
-                <a href="">Inbox</a>
-                <a href="">History</a>
-                <a href="">Studio</a>
-                <a href="">Commons</a>
-                <a href="">Help</a>
-                </td>
+            <td  id="nav_tab" style="background-color: black;">
+                <a href="#" class="link_dec">
+                    
+                    <i class="fa fa-home fa-2x spacer" aria-hidden="true" style="color: gray;"></i><br/>
 
-                <td id="nav_tab2" >
-                <a href="#">Logout</a>
-                <a href="">Notifications</a>
-                <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/profile/">Profile</a>
-                <a href="">Files</a>
-                <a href="">Settings</a>
-                <a href="">ePortfolios</a>
-                <a href="">Shared Content</a>
-                <a href="">The Hub</a>
-                <a href="">Qwickly Course Tools</a>
-                <a href="">Global Announcements</a>
-                </td>
 
+                </a>
+                
+                <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/account" id="acc_id">
+                    <i class="fa fa-user fa-2x spacer" aria-hidden="true" style="color: gray;"></i><br/>
+                    Account
+                </a>
+
+                <a href="" class="link_dec">
+                    <i class="fa fa-square fa-2x spacer" aria-hidden="true" style="color: red;"></i><br/>
+
+
+                    Dashboard
+                </a>
+                <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/home.html" class="link_dec">
+                    <i class="fa fa-book fa-2x spacer" aria-hidden="true" style="color: red;"></i><br/>
+
+                    Courses
+                </a>
+                <a href="" class="link_dec">
+                    <i class="fa fa-calendar fa-2x spacer" aria-hidden="true" style="color: red;"></i><br/>
+                    Calendar
+                </a>
+                <a href="" class="link_dec">
+                    <i class="fa fa-inbox fa-2x spacer" aria-hidden="true" style="color: red;"></i><br/>
+                    Inbox
+                </a>
+                <a href="" class="link_dec">
+                    <i class="fa fa-history fa-2x spacer" aria-hidden="true" style="color: red;"></i>
+
+                    History
+                </a>
+                <a href="" class="link_dec">
+                    <i class="fa fa-play-circle fa-2x spacer" aria-hidden="true" style="color: red;"></i>
+
+                    Studio
+                </a>
+                <a href="" class="link_dec">
+                    <i class="fa fa-compass fa-2x spacer" aria-hidden="true" style="color: red;"></i>
+                    Commons
+                </a>
+                <a href="" class="link_dec">
+                    <i class="fa fa-question-circle fa-2x spacer" aria-hidden="true" style="color: red;"></i>
+
+                    Help
+                </a>
+                </td>
+                
+                <td id="nav_t" >
+                        <div id="nav2_tab">
+                        <a href="" class="link_nav2_dec">Notifications</a>
+                        <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/profile/" id="prof_id">Profile</a>
+                        <a href="" class="link_nav2_dec">Files</a>
+                        <a href="" class="link_nav2_dec">Settings</a>
+                        <a href="" class="link_nav2_dec">ePortfolios</a>
+                        <a href="" class="link_nav2_dec">Shared Content</a>
+                        <a href="" class="link_nav2_dec">The Hub</a>
+                        <a href="" class="link_nav2_dec">Qwickly Course <br/> Tools</a>
+                        <a href="" class="link_nav2_dec">Global <br/> Announcements</a>
+                    </div>
+                        </td>
+        
+
+       
 
 
                 <td id="profile_tab">
-                    <p>Account</p>
-                    <hr style="width:390px;text-align:left;margin-left: 2px;"> 
-                    <div style="margin-top: 22px;">
-                        <p style="display: inline; font-size: x-large;">Mattia Contestabile<p> 
+                    <div id="profile_divisor">
+                        <p>Mattia Contestabile's Profile</p>
+                        <hr style="width:590px;text-align:left;margin-left: 2px;"> 
+                    </div>
+
+                    <!-- <div style="margin-top: 22px;">  
+                        <button onclick="window.location.href='https://a1--silly-boba-52f9d4.netlify.app/kanbas/profile/edit.html'" style="display: inline; margin-left: 150px;">✎ Edit Profile</button>    
+                        <div>
+                            <i class="fa fa-user fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <p style="display: inline; font-size: x-large;">Mattia Contestabile
+                        <p> 
+                        <p style="font-size: larger;">Contact</p>
+                        <p style="font-size: smaller;">No registered services, you can add  some on the <a href="#">settings</a> page</p>
+                    </div>
+
+
+                    <div>
+                        <p style="font-size: larger;">Biography</p>
+                        <p style="font-size: smaller;">Faculty, Software Engineer, A.I, Space,  and renewable enthusiast.</p>
 
                     </div>
+
+                    <div>
+                        <p style="font-size: larger;">Links</p>
+                        <a href="https://www.youtube.com/@WebDevTV">YouTube</a>
+                    </div> -->
 
 
                  </td>
