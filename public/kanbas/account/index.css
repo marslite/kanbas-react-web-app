@@ -7,9 +7,9 @@
     width: 97px;
 }
 
-/* #nav_tab a i{
+#nav_tab a {
     margin-bottom: 5px;
-} */
+}
 
 .spacer{
     margin-bottom: 5px;
@@ -66,7 +66,8 @@
     text-decoration: none;
     text-align: left;
     word-wrap: break-word;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    padding: 5px;
   }
 
   
