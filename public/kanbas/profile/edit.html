@@ -107,47 +107,73 @@
                             <label for="text-fields-name"> <b>Name:*</b></label> <br/>
                             <input id="text-fields-name" ><br/>
                             <label for="text-fields-pronouns"> <b>Pronouns</b></label><br/>
-                            <select >
+                            <select class="form-select form-select-sm  marg">
+                                <option value="val0" selected>None</option>
                                 <option value="val1">He/him</option>
                                 <option value="val2">She/Her</option>
                                 <option value="val3">They/Them</option>
-                                <option value="val4">None</option>
-                            </select> <br/>
-                           <br/> <label for="text-fields-title" ><b>Title</b></label><br/>
-                            <input id="text-fields-title" >
-                        </form>
+                            </select> 
+                            <label for="text-fields-title" ><b>Title</b></label>
+                            <input id="text-fields-title" class="form-control" >
+                        </form><br/>
                         <p style="font-size: larger;">Contact</p>
-                        <p style="font-size: smaller;">No registered services, you can add <br/> some on the <a href="#">settings</a> page</p>
+                        <p style="font-size: smaller;">No registered services, you can add  some <br/> on the <a href="#">settings</a> page</p>
                        
                     </div>
 
 
                     <div>
                         <p style="font-size: larger;">Biography</p>
-                        <p style="font-size: smaller;">Faculty, Software Engineer, A.I, Space, <br/>  and renewable enthusiast.</p>
                         <textarea id="" cols="43" rows="3">Faculty, Software Engineer, A.I, Space,  and renewable enthusiast.</textarea>
-                    </div>
+                    </div><br/>
 
                     <div>
                         <p style="font-size: larger">Links</p>
-                        <li style="margin-left: 35px;">
+                        <!-- <li style="margin-left: 35px;">
                             <a href="https://www.youtube.com/@WebDevTV">YouTube ⎘ Links to an external site</a>
-                        </li><br/>
+                        </li><br/> -->
 
-                        <table width='100%'>
+                        <div class="container text-align">
+                            <div class="row">
+                              <div class="col-sm-5">
+                                <!-- <p style="text-align: center;">Link</p> -->
+                                <h6>Link</h6>
+                                <div>
+                                    <input type="text" placeholder="YouTube">
+                                    <i class="fa fa-arrow-right arrow-pos" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                              <div class="col-sm-5">
+                                <!-- <p style="text-align: center;">URL</p> -->
+                                <h6>URL</h6>
+                                <div>
+                                    <input type="text" placeholder="URL">
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                        <!-- <table width='100%'>
                             <tbody>
                                 <tr>
-                                    <td  style="text-align: center;"><b>Title</b></td>
+                                    <td style="text-align: center;"><b>Title</b></td>
                                     <td style="text-align: center;"><b>URL</b></td>
                                 </tr>
                                 <tr>
-                                    <td style="display: flex;"><input type="text" placeholder="Title" > → </td>
-                                    <td ><input type="text" placeholder="URL">
+                                    <div>
+                                        <td id="url_link">
+                                            <input type="text" placeholder="YouTube" > <i class="fa fa-arrow-right arrow-pos" aria-hidden="true"></i> 
+                                        </td>
+                                        <td ><input type="text" placeholder="URL"> </td>
+                                    </div>
                                         <td><a href="#">Remove</a></td>
 
                                 </tr>
                             </tbody>
-                        </table>
+                        </table> -->
+
+
                         <div >
                             <button> Add Another link</button> <br/>
                             <button style="display: inline;">Cancel</button>
