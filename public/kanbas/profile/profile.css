@@ -11,6 +11,12 @@
 }
 
 
+.fa-7x{
+    margin-top: 3px;
+    margin-left: -2px;
+}
+
+
 #name_tag{
     display: flex;
     margin-left: 20px
@@ -27,6 +33,10 @@
 .spacingUp{
     margin-top: 19px;
     border-left: gray;
+}
+
+.splacer{
+    margin-right: 4px;
 }
 
 #acc_id{
