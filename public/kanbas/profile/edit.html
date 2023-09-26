@@ -104,8 +104,8 @@
                         </div>
 
                         <form id="text-fields">
-                            <label for="text-fields-name"> <b>Name:*</b></label> <br/>
-                            <input id="text-fields-name" ><br/>
+                            <label for="text-fields-name"> <b>Name:*</b></label><br/>
+                            <input id="text-fields-name" class="form-control" >
                             <label for="text-fields-pronouns"> <b>Pronouns</b></label><br/>
                             <select class="form-select form-select-sm  marg">
                                 <option value="val0" selected>None</option>
@@ -116,19 +116,21 @@
                             <label for="text-fields-title" ><b>Title</b></label>
                             <input id="text-fields-title" class="form-control" >
                         </form><br/>
-                        <p style="font-size: larger;">Contact</p>
-                        <p style="font-size: smaller;">No registered services, you can add  some <br/> on the <a href="#">settings</a> page</p>
+                        <div>
+                            <h4>Contact</h4>
+                            <p style="font-size: smaller;">No registered services, you can add  some <br/> on the <a href="#">settings</a> page</p>
+                        </div>
                        
                     </div>
 
 
                     <div>
-                        <p style="font-size: larger;">Biography</p>
+                        <h4>Biography</h4>
                         <textarea id="" cols="43" rows="3">Faculty, Software Engineer, A.I, Space,  and renewable enthusiast.</textarea>
                     </div><br/>
 
                     <div>
-                        <p style="font-size: larger">Links</p>
+                        <h4>Links</h4>
                         <!-- <li style="margin-left: 35px;">
                             <a href="https://www.youtube.com/@WebDevTV">YouTube ⎘ Links to an external site</a>
                         </li><br/> -->
@@ -143,44 +145,30 @@
                                     <i class="fa fa-arrow-right arrow-pos" aria-hidden="true"></i>
                                 </div>
                               </div>
+
                               <div class="col-sm-5">
-                                <!-- <p style="text-align: center;">URL</p> -->
                                 <h6>URL</h6>
                                 <div>
                                     <input type="text" placeholder="URL">
+                                    <i class="fa fa-times-circle x-btn"  aria-hidden="true"></i>
+
 
                                 </div>
                               </div>
                             </div>
                           </div>
 
-                        <!-- <table width='100%'>
-                            <tbody>
-                                <tr>
-                                    <td style="text-align: center;"><b>Title</b></td>
-                                    <td style="text-align: center;"><b>URL</b></td>
-                                </tr>
-                                <tr>
-                                    <div>
-                                        <td id="url_link">
-                                            <input type="text" placeholder="YouTube" > <i class="fa fa-arrow-right arrow-pos" aria-hidden="true"></i> 
-                                        </td>
-                                        <td ><input type="text" placeholder="URL"> </td>
-                                    </div>
-                                        <td><a href="#">Remove</a></td>
 
-                                </tr>
-                            </tbody>
-                        </table> -->
+                        <div class="add_link_margin">
+                            <button class="btn btn-light"> Add Another link</button> <br/>
+                        </div>
+                        <hr style="width:520px;text-align:left;margin-left: 2px;"> 
 
 
-                        <div >
-                            <button> Add Another link</button> <br/>
-                            <button style="display: inline;">Cancel</button>
-                            <button style="display: inline;"> Save Profile</button><br/>
-                            <button>Edit Profile</button>
-                            <button>Cancel Editing</button>
 
+                        <div class="lolo">
+                            <button style="display: inline;" class="btn btn-light">Cancel</button>
+                            <button style="display: inline;  color: white;" class="btn bg-danger"> Save Profile</button>
                         </div>
 
                     </div>

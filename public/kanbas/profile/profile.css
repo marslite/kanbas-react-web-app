@@ -29,6 +29,13 @@
     width: 209px;
 }
 
+.lolo{
+    margin-left: 322px;
+}
+
+.add_link_margin{
+    margin-left: 12px;
+}
 
 #name_tag{
     display: flex;
@@ -46,6 +53,11 @@
 .spacingUp{
     margin-top: 19px;
     border-left: gray;
+}
+
+.x-btn{
+    display: inline;
+    color: red;
 }
 
 .splacer{
