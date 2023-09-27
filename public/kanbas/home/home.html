@@ -5,57 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="../home/home.css">
+    <link  href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../vendors/fontawesome/css/all.css">
  
 </head>
 <body>
-    <table border="2" width="100%" >
+    <table border="3" width="100%" style="display: flex;" >
 
-        <tbody> 
-            <tr>
-                <div>
-                    <td id="td_nav" >
+        <tbody style="display: flex; height: 64rem;"> 
+            <tr valign="baseline" style="display: flex;">
+                <td  id="nav_tab" style="background-color: black;">
+                    <a href="#" class="link_dec">
+                        <img src="../../images/ic_logo.png" alt="" width="90px" height="90px">
+                    </a>
+                    
+                    <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/account" class="link_dec">
+                        <i class="fa fa-user fa-2x spacer" aria-hidden="true" style="color: gray;"></i><br/>
+                        Account
+                    </a>
     
-                        <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/account">Account</a>
-                        <a href="">Dashboard</a>
-                        <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/home">Courses</a>
-                        <a href="">Calendar</a>
-                        <a href="">Inbox</a>
-                        <a href="">History</a>
-                        <a href="">Studio</a>
-                        <a href="">Commons</a>
-                        <a href="">Help</a>
+                    <a href="" class="link_dec">
+                        <i class="fa fa-folder-open fa-2x spacer" aria-hidden="true" style="color: red;"></i><br/>
+    
+                        Dashboard
+                    </a>
+                    <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/home.html" id="courses_id">
+                        <i class="fa fa-book fa-2x spacer" aria-hidden="true" style="color: red;"></i><br/>
+    
+                        Courses
+                    </a>
+                    <a href="" class="link_dec">
+                        <i class="fa fa-calendar fa-2x spacer" aria-hidden="true" style="color: red;"></i><br/>
+                        Calendar
+                    </a>
+                    <a href="" class="link_dec">
+                        <i class="fa fa-inbox fa-2x spacer" aria-hidden="true" style="color: red;"></i><br/>
+                        Inbox
+                    </a>
+                    <a href="" class="link_dec">
+                        <i class="fa fa-history fa-2x spacer" aria-hidden="true" style="color: red;"></i>
+    
+                        History
+                    </a>
+                    <a href="" class="link_dec">
+                        <i class="fa fa-play-circle fa-2x spacer" aria-hidden="true" style="color: red;"></i>
+    
+                        Studio
+                    </a>
+                    <a href="" class="link_dec">
+                        <i class="fa fa-compass fa-2x spacer" aria-hidden="true" style="color: red;"></i>
+                        Commons
+                    </a>
+                    <a href="" class="link_dec">
+                        <i class="fa fa-question-circle fa-2x spacer" aria-hidden="true" style="color: red;"></i>
+    
+                        Help
+                    </a>
+                    </td>
+    
+
+                    <td id="nav_t">
+                        <div id="nav2_tab">
+                            <a href="" id="home_id">Home</a>
+                            <a href="" class="link_nav2_dec">Modules</a>
+                            <a href="" class="link_nav2_dec">Piazza</a>
+                            <a href="" class="link_nav2_dec">Zoom Meetings</a>
+                            <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/assignments/" class="link_nav2_dec">Assignments</a>
+                            <a href="" class="link_nav2_dec">Quizzes</a>
+                            <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/grades.html" class="link_nav2_dec">Grades</a>
+                            <a href="" class="link_nav2_dec">People</a>
+                            <a href="" class="link_nav2_dec">Panopto Video</a>
+                            <a href="" class="link_nav2_dec">Discussions</a>
+                            <a href="" class="link_nav2_dec">Announcements</a>
+                            <a href="" class="link_nav2_dec">Pages</a>
+                            <a href="" class="link_nav2_dec">Files</a>
+                            <a href="" class="link_nav2_dec">Rubrics</a>
+                            <a href="" class="link_nav2_dec">Outcomes</a>
+                            <a href="" class="link_nav2_dec">Collaborations</a>
+                            <a href="" class="link_nav2_dec">Syllabus</a>
+                            <a href="" class="link_nav2_dec">Settings</a>
+                        </div>
                     </td>
 
-                </div>
 
-                <div>
-                    <td id="td_nav2">
-                        <a href="">Home</a>
-                        <a href="">Modules</a>
-                        <a href="">Piazza</a>
-                        <a href="">Zoom Meetings</a>
-                        <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/assignments/">Assignments</a>
-                        <a href="">Quizzes</a>
-                        <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/grades.html">Grades</a>
-                        <a href="">People</a>
-                        <a href="">Panopto Video</a>
-                        <a href="">Discussions</a>
-                        <a href="">Announcements</a>
-                        <a href="">Pages</a>
-                        <a href="">Files</a>
-                        <a href="">Rubrics</a>
-                        <a href="">Outcomes</a>
-                        <a href="">Collaborations</a>
-                        <a href="">Syllabus</a>
-                        <a href="">Settings</a>
-                    </td>
+                <td id="profile_tab">
 
-                </div>
+                    <div id="profile_divisor">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb" id="home_url">
+                              <li class="breadcrumb-item"><a href="#">CS5610</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Modules</li>
+                            </ol>
+                          </nav>
+                          
+                        <hr style="width:1300px;text-align:left;margin-left: -231px;"> 
+                    </div> 
+
+
+                 </td>
 
 
 
 
-                <div id="top-nav">
+
+
+                <!-- <div id="top-nav">
                 <td>
                     <div id="wd-flex" >
                         <button>Collapse All</button>
@@ -112,10 +166,10 @@
                     </div>
 
                 </td>
-                </div>
+                </div> -->
 
 
-                <div>
+                <!-- <div>
                     <td id="course-nav">
                         <h1>Course Status</h1>
                         <div id="wd-flex">
@@ -146,22 +200,17 @@
 
                     </td>
 
-                </div>
+                </div> -->
 
 
 
 
-            </tr>
-
-
-        </tbody>
-    
+                
+                
+            </tbody>
+        </tr>
     </table>
-    
-    
- 
 </body>
-
 </html>
 
 

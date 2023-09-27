@@ -1,5 +1,62 @@
+#nav_tab {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 97px;
+}
 
 
+#nav_tab a{
+    text-decoration: none;
+    /* text-align: left; */
+    display: flex;
+    margin-bottom: 5px;
+    flex-direction: column;
+    text-align: center;
+}
+
+#profile_tab {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 0rem; */
+    margin-top: 20px;
+
+    margin-left: 23px;
+}
+
+
+#nav_t {
+    margin-top: 22px;
+    width: 190px;
+  }
+
+
+
+  #nav2_tab {
+    display: flex;
+    flex-direction: column;
+    height: 45rem;
+    margin-left: 5px;
+    margin-top: 64px;
+    margin-top: 58px;
+  }
+
+
+  #nav2_tab a{
+    text-decoration: none;
+    text-align: left;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+
+
+#courses_id{
+    background-color: white;
+    color: red;
+
+}
 
 
 #td_nav {
@@ -13,6 +70,27 @@
     height: 11rem;
 }
 
+
+
+.link_dec{
+    color: white;
+}
+
+.link_nav2_dec{
+    color: red;
+}
+
+#home_id{
+    color: black;
+    background-color: white;
+    border-left: 3px solid;
+    margin-left: -4px;
+    padding-left: 9px;
+}
+
+#home_url{
+    margin-left: -136px;
+}
 
 
 
