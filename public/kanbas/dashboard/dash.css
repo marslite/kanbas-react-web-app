@@ -19,8 +19,8 @@
 }
 
 .white_spacing_up{
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 30px !important;
+    margin-bottom: 40px !important;
 }
 
 
