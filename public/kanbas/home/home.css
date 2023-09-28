@@ -133,3 +133,16 @@
     flex-direction: column;
     margin-top: -21px;
 }
+
+.sub-mar{
+    margin-left: 20px;
+
+}
+
+.text-dec{
+    text-decoration: none;
+}
+
+.check-bg{
+    color: green;
+}
