@@ -28,15 +28,20 @@
 }
 
 
-.nav_2 {
-    margin-left: 116px;
+
+
+  .nav_2 {
+    position: fixed;  
+    top: 130px;  
+    left: 118px;  
     display: flex;
     flex-direction: column;
-    margin-top: -936px;
   }
 
+
+
   .link_space{
-    /* margin-top:20px; */
+
     margin-bottom:15px;
     color: red;
     text-decoration: none;
@@ -57,4 +62,5 @@
 html, body{
     height: 100%;
     margin:0;
-}
+} 
+
