@@ -20,7 +20,9 @@
     text-align: center;
 }
 
-
+.temp{
+    width: 88rem;
+}
 
 .link_dec{
     color: white;
@@ -39,8 +41,14 @@
     width: 190px;
   }
 
+  .spacing_list{
+    margin-left: 18rem;
+  }
 
-  
+  .flex-enabler{
+    display: flex;
+  }
+
 .link_space{
     /* margin-top:20px; */
     margin-bottom:15px;
@@ -80,3 +88,29 @@
   .spacing_nav{
     margin-top: -11px;
   }
+
+
+.check-bg{
+    color: green;
+}
+
+.ad_dd{
+    display: inline-block;
+}
+
+.sub-mar{
+    margin-left: 20px !important;
+
+}
+
+.marg-fx{
+    margin-top: -46px;      
+}
+
+
+.course_stat {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18rem;
+  }
+  

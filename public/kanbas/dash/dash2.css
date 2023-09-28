@@ -1,3 +1,7 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
 
 #nav_tab {
     display: flex;
@@ -5,7 +9,13 @@
     margin-right: 20px;
     width: 97px;
     background-color: black;
-    height: 77rem;
+    height: 100%;
+}
+
+.fl-cnt{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 #nav_tab a {
@@ -68,7 +78,9 @@
     margin-left: -7px !important;
 }
 
+
+
 .dash_board {
     margin-left: 8rem;
-    margin-top: -76rem;     
+    margin-top: -79rem;     
 }

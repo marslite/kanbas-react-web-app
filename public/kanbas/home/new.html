@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <div id="nav_tab">
+    <div id="nav_tab" class="d-none d-lg-block">
         <a href="#" class="link_dec">
             <img src="../../images/ic_logo.png" alt="" width="90px" height="90px">
         </a>
@@ -68,7 +68,7 @@
     </div>
 
 
-    <div class="container-fluid " style="border: solid black;">
+    <div class="container-fluid  d-none d-lg-block" style="border: solid black;">
         <div class="fix-tab">
             <a href="" class="link_space">Home</a>
             <a href="" class="link_space">Modules</a>
@@ -102,10 +102,282 @@
                   <li class="breadcrumb-item active spacing_nav" aria-current="page">Home</li>
                 </ol>
               </nav>
+              <div class="float-end marg-fx">
+                <button class="btn btn-secondary">Student View</button>
+              </div>
             <hr style="width:1300px;text-align:left;margin-left: -231px;"> 
 
         </div>
     </div>
+
+    <div class=" d-none d-sm-block">
+
+        <div class="float-end flex-enabler d-none d-md-block ">
+            <button class="btn btn-secondary" type="submit">Collapse All</button>
+            <button class="btn btn-secondary" type="submit">View Pages</button>
+
+            <!-- <button class="btn btn-secondary" type="submit">
+                <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                Publish All
+            </button> -->
+            <div class="dropdown ad_dd">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Publish All
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+              <!-- <select class="form-select">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+             </select> -->
+
+
+            <button class="btn btn-danger" type="submit">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                Module
+            </button>
+            <button class="btn btn-secondary" type="submit">
+                <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+            </button>
+        </div><br/>
+        <hr style="width:67rem; text-align:left;margin-left: 332px;"> 
+
+    </div>
+
+
+    <div class="container-fluid  d-sm-block">
+        <ul class="list-group spacing_list">
+            <!-- TA Raghul suprvised this code and reccomended to go with plain CSS -->
+            <li class="list-group-item list-group-item-secondary">
+
+                Week 0 - Intro
+            </li>
+          
+            <li class="list-group-item clickable">
+
+                <a href="#" class="ml-3 text-dec" >LEARNING OBJECTIVES</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+
+
+                </div>
+
+            </li>
+            <li class="list-group-item clickable">
+
+                <a href="#" class="ml-3 sub-mar text-dec" >Introudction to the course</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+
+
+                </div>
+
+
+            </li>
+
+            <li class="list-group-item  clickable">
+                <a href="#" class="ml-3 sub-mar text-dec" >Learn what is Web Development</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+            </li>
+
+
+            <li class="list-group-item  clickable">
+
+
+                <a class="sub-mar text-dec" href="#">Creating a development enviornment</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+
+            </li>
+
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 sub-mar text-dec" >Creating a Web Application</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+
+            </li>
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 sub-mar text-dec">Getting started with the 1st assignment</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+
+            </li>
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 text-dec" >READING</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+
+            </li>
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 sub-mar text-dec" >Full Stack Developer - Chapter 1 - Introduction</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+
+            </li>
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 sub-mar text-dec" >Full Stack Developer - Chapter 2 - Creating User Interfaces With HTML</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 text-dec" >SLIDES</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 sub-mar text-dec" >Introudction to Web Development</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 sub-mar text-dec" >Creating an HTTP server with Node.js</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+            </li>
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 sub-mar text-dec" >Creating a React Application</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+            </li>
+
+
+          </ul><br/>
+
+          <ul class="list-group spacing_list">
+            <!-- TA Raghul suprvised this code and reccomended to go with plain CSS -->
+            <li class="list-group-item list-group-item-secondary">
+
+                Week 1 - HTML
+            </li>
+          
+            <li class="list-group-item clickable">
+
+                <a href="#" class="ml-3 text-dec" >LEARNING OBJECTIVES</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+
+
+                </div>
+
+            </li>
+            <li class="list-group-item clickable">
+
+                <a href="#" class="ml-3 sub-mar text-dec" >Introudction to the course</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+
+
+                </div>
+
+
+            </li>
+
+            <li class="list-group-item  clickable">
+                <a href="#" class="ml-3 sub-mar text-dec" >Learn what is Web Development</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+            </li>
+
+
+            <li class="list-group-item  clickable">
+
+
+                <a class="sub-mar text-dec" href="#">Creating a development enviornment</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+
+            </li>
+
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 sub-mar text-dec" >Creating a Web Application</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+
+            </li>
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 sub-mar text-dec">Getting started with the 1st assignment</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+
+            </li>
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 text-dec" >READING</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+
+            </li>
+            <li class="list-group-item clickable">
+                <a href="#" class="ml-3 sub-mar text-dec" >Full Stack Developer - Chapter 1 - Introduction</a>
+                <div class="float-end">
+                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+
+            </li>
+
+
+
+          </ul>
+    </div>
+    <!-- You can ignore this part 
+    <div class="course_stat">
+        <h4>Course Status</h4>
+        <hr style="width:181px;text-align:left;margin-left: -1rem;"> 
+        <div>
+            <button class="btn btn-secondary">Published</button>
+            <button class="btn btn-secondary">Unpublished</button>
+        </div>
+
+
+    </div>
+ -->
+
+      
+
+
 
 
     
