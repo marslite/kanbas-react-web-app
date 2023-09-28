@@ -1,12 +1,22 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
 #nav_tab {
     display: flex;
     flex-direction: column;
     margin-right: 20px;
     width: 97px;
+    height: 100%;
     background-color: black;
-    height: 77rem;
+    /* height: 77rem; */
 }
 
+.fl-cnt{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
 #nav_tab a {
     margin-bottom: 5px;
@@ -35,7 +45,7 @@
 .fix-tab {
     display: flex;
     flex-direction: column;
-    margin-top: -71rem;
+    margin-top: -65rem;
     margin-left: 102px;
     /* border: solid; */
     width: 190px;
@@ -81,9 +91,10 @@
 
 
   #profile_tab {
-    margin-top: -75rem;
-    margin-left: 333px;
+    margin-top: -69rem;
+    margin-left: 334px;
   }
+  
 
   .spacing_nav{
     margin-top: -11px;
