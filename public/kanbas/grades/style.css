@@ -87,35 +87,3 @@ html, body{
     margin:0;
 } 
 
-
-.second_nav {
-    margin-left: 32rem;
-    margin-top: -67rem;
-  }
-  
-
-  .src_1{
-    margin-left: -151px;
-  }
-
-.btn_1{
-    margin-left: 439px;
-}
-
-
-
-
-  .ass {
-    /* border: solid; */
-    margin-left: 22rem;
-    margin-top: -66rem;
-    width: 65rem;
-  }
-  
-  
-  .main-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-      

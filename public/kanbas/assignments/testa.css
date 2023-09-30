@@ -12,13 +12,12 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 97px;
 }
-
 
 #nav_tab a {
     margin-bottom: 5px;
 }
-
 
 #nav_tab a{
     text-decoration: none;
@@ -27,50 +26,30 @@
     text-align: center;
 }
 
-
-
-
-  .nav_2 {
-    position: fixed;  
-    top: 130px;  
-    left: 118px;  
+.nav_2 {
     display: flex;
     flex-direction: column;
-  }
+    width: 150px; 
+    margin-top: 105px;
+    margin-left: 20px;
+}
 
-
-
- .profile-divisor {
-     position: fixed; 
+.profile-divisor {
     display: flex;
     flex-direction: column;
-    top: 61px;   
-    left: 329px;
-} 
+    margin-top: 61px; 
+    margin-left: 0;  
+}
 
 .profile-divisor .float-end {
     margin-top:-43px;
-} 
+}
 
-/* Here's the responsive one that NEEDS fixing */
-
-/* .profile-divisor {
-    display: flex;
-    flex-direction: column;
-    margin-left: 16rem;
-    margin-top: -996px;
-} */
-
-
-
-  .link_space{
-
-    margin-bottom:15px;
+.link_space{
+    margin-bottom: 15px;
     color: red;
     text-decoration: none;
-  }
-  
-
+}
 
 .link_dec{
     color: white;
@@ -81,41 +60,26 @@
     color: red;
 }
 
-
 html, body{
     height: 100%;
     margin:0;
-} 
-
-
-.second_nav {
-    margin-left: 32rem;
-    margin-top: -67rem;
-  }
-  
-
-  .src_1{
-    margin-left: -151px;
-  }
-
-.btn_1{
-    margin-left: 439px;
 }
 
+.ass {
+    width: 100%; 
+    margin-left: 0;  
+    margin-top: 10px; 
+}
 
+.page-content {
+    display: flex;
+    height: 100%;
+}
 
-
-  .ass {
-    /* border: solid; */
-    margin-left: 22rem;
-    margin-top: -66rem;
-    width: 65rem;
-  }
-  
-  
-  .main-wrapper {
+.main {
+    flex: 1; 
     display: flex;
     flex-direction: column;
 }
 
-      
+
