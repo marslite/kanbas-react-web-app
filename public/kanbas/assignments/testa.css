@@ -60,6 +60,14 @@
     color: red;
 }
 
+#ass_id{
+    color: black;
+    background-color: white;
+    border-left: 3px solid;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
 html, body{
     height: 100%;
     margin:0;
@@ -91,7 +99,58 @@ html, body{
 
   
 
-.newrul{
+.newrul {
     display: flex;
-    margin-left: 52px;
-  } 
+    margin-left: 31px;
+  }
+
+
+  .list-group {
+    display:flex;
+    flex-direction:column;
+    padding-left:0;
+    margin-bottom:0;
+    /* border-left: solid gold; */
+    /*! border-radius:.25rem */
+  }
+
+
+  
+
+/* bootstrap.min.css | http://localhost:3000/vendors/bootstrap/css/bootstrap.min.css */
+
+
+
+  a.list-group-item:nth-child(2) {
+    border-left: solid green;
+  }
+  
+
+  
+
+  a.list-group-item:nth-child(3) {
+    border-left: solid green;
+  }
+  
+  a.list-group-item:nth-child(4) {
+    border-left: solid green;
+  }
+  
+
+  a.list-group-item:nth-child(5) {
+    border-left: solid green;
+  }
+  
+  a.list-group-item:nth-child(5) {
+    border-left: solid green;
+  }
+
+  a.list-group-item:nth-child(6) {
+    border-left: solid green;
+  }
+  
+
+  .rou {
+    border-radius: 26px !important;
+  }
+  

@@ -77,7 +77,7 @@
             <a href="" class="link_space">Zoom Meetings</a>
             <a href="" class="link_space">Modules</a>
             <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/assignments/" class="link_space">Quizzes</a>
-            <a href="" class="link_space">Assignments</a>
+            <a href="" id="ass_id">Assignments</a>
             <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/grades.html" class="link_space">Grades</a>
             <a href="" class="link_space">People</a>
             <a href="" class="link_space">Microsoft Teams Meetings</a>
@@ -104,7 +104,7 @@
                       <li class="breadcrumb-item active spacing_nav" aria-current="page">Assignments</li>
                     </ol>
                     <div class="float-end">
-                      <button class="btn btn-secondary">Student View</button>
+                      <button class="btn btn-light">Student View</button>
                     </div>
         
         
@@ -114,12 +114,34 @@
             </div>
 
             <div class="ass">
-                <div class="container" style="border: solid;">
-                    <hr style="width:20px;text-align:left;"> 
+                <div class="container" style="border: solid white;">
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                          <form class="d-flex w-25" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search for Assignments" aria-label="Search">
+                          </form>
+
+                          <div class="float-end">
+                              <button class="btn btn-light">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                Group
+                            </button>
+                              <button class="btn btn-light" style="background-color: red; color: white;">
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                Assignment
+                            </button>
+                              <button class="btn btn-light">
+                                <i class="fa fa-ellipsis-v" style="color: black;" aria-hidden="true"></i>
+                              </button>
+                          </div>
+                        </div>
+                      </nav>
             
                 </div>
 
             </div>
+            <hr style="width:1059px;text-align:left; margin-left: 16px;"> 
+
 
             <div class="container-fluid">
                 <div class="row">
@@ -130,19 +152,18 @@
 
                             <li class="list-group-item list-group-item-secondary ">
                                 <div class="float-right" style="display: inline-block; margin-right: 20px;">
-                                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
                                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                 </div>
-
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
                                 Assignments
                                 <div class="float-end">
-                                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+                                    <button class="btn btn-light rou" >40% of Total</button>
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
                                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                 </div>
                             </li>
                             <a href="#" class="list-group-item list-group-item-action ">
                                 <div class="float-right" style="display: inline-block; margin-right: 20px;">
-                                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
                                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                 </div>
 
@@ -155,6 +176,7 @@
                                     
                                 <div class="float-end" style="margin-top: -46px;">
                                     <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+
                                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                 </div>
                             </a>
@@ -163,7 +185,6 @@
 
                             <a href="#" class="list-group-item list-group-item-action ">
                                 <div class="float-right" style="display: inline-block; margin-right: 20px;">
-                                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
                                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                 </div>
 
@@ -183,7 +204,6 @@
 
                             <a href="#" class="list-group-item list-group-item-action ">
                                 <div class="float-right" style="display: inline-block; margin-right: 20px;">
-                                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
                                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                 </div>
 
@@ -203,7 +223,6 @@
 
                             <a href="#" class="list-group-item list-group-item-action ">
                                 <div class="float-right" style="display: inline-block; margin-right: 20px;">
-                                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
                                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                 </div>
 
@@ -222,7 +241,7 @@
 
                             <a href="#" class="list-group-item list-group-item-action ">
                                 <div class="float-right" style="display: inline-block; margin-right: 20px;">
-                                    <i class="fa fa-check-circle check-bg" aria-hidden="true"></i>
+
                                     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
                                 </div>
 
@@ -239,22 +258,7 @@
                                 </div>
                             </a>
 
-
-
-
-
-
-  
-
-
-
-                            
-
-
-                            
-                           
-                
-                
+                                
                           </ul><br/>
                 
                     </div>
