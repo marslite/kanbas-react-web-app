@@ -154,14 +154,12 @@ html, body{
     border-radius: 26px !important;
   }
   
-/* 
-  .container-fluid {
-    margin-left: 40px;
-  }
 
-  .profile-divisor > nav:nth-child(1) {
-    --bs-breadcrumb-divider: '>';
-    margin-left: -91px;
-    margin-top: -25px;
+#colds{
+    color: green;
+}
+
+div.float-end:nth-child(6) {
+    max-width: 67rem;
   }
-   */
+  
