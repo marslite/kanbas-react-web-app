@@ -161,3 +161,30 @@ html, body{
     text-decoration: none;
     color: red;
   }
+
+
+  div.col-sm-5:nth-child(2) {
+    margin-left: -166px;
+  }
+
+
+  .spacs_{
+    margin-left: 91px;
+  }
+  
+  .spac_{
+        margin-left: 93px;      
+  }
+
+  .new_wd{
+    width: 63rem;;
+  }
+
+  
+
+
+  .cont_edit {
+    margin-left: 39px;
+    margin-top: -29px;
+    width: 31rem;
+  }
