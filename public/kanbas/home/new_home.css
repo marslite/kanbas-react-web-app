@@ -168,7 +168,11 @@ html, body {
   /* } */ 
   
 
- 
+ .margo{
+        color: gray;
+        margin-left: -13rem;
+      
+ }
 
 
   #container-edits {

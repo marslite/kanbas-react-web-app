@@ -1,0 +1,163 @@
+#nav_tab {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 97px;
+    background-color: black;
+    height: 100%;
+    flex-grow: 1 !important;
+}
+
+.fl-cnt{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 97px;
+}
+
+#nav_tab a {
+    margin-bottom: 5px;
+}
+
+#nav_tab a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav_2 {
+    display: flex;
+    flex-direction: column;
+    width: 150px; 
+    margin-top: 105px;
+    margin-left: 20px;
+}
+
+/* .profile-divisor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 23px;
+    margin-left: -28px;
+} */
+
+
+.profile-divisor {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    margin-left: -28px;
+}
+
+/* .profile-divisor {
+    margin-top: 23px;
+    margin-left: -28px;
+  } */
+  
+  .spacing{
+    margin-left: 14px;
+  }
+
+  #profile_divisorS {
+    display: flex;
+    margin-left: -92px;
+    margin-top: 9px;
+  }
+  
+
+.profile-divisor .float-end {
+    margin-top:-43px;
+}
+
+.link_space{
+    margin-bottom: 15px;
+    color: red;
+    text-decoration: none;
+}
+
+.link_dec{
+    color: white;
+}
+
+#profile_id{
+    background-color: white;
+    color: red;
+}
+
+#ass_id{
+    color: black;
+    background-color: white;
+    border-left: 3px solid;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+html, body{
+    height: 100%;
+    margin:0;
+}
+
+.ass {
+    width: 100%; 
+    margin-left: 0;  
+    margin-top: 10px; 
+}
+
+.page-content {
+    display: flex;
+    height: 100%;
+}
+
+.main {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.spad{
+    margin-top: -30px;
+}
+
+
+
+ 
+/* 
+   .nw-d {
+    width: 399px;
+   } */
+
+
+
+
+
+   /* .cont {
+    margin-left: 39px;
+    margin-top: -13px;
+  } */
+
+  .cont {
+    margin-left: 39px;
+    margin-top: -29px;
+  }
+  
+  .prof_marg{
+    margin-top: 22px;
+  }
+
+  .p_t{
+    display: inline; 
+    font-size: x-large;
+  }
+
+  .p_head{
+    font-size: larger;
+  }
+  .p_small{
+    font-size: smaller;
+  }
+
+  .red_red{
+    text-decoration: none;
+    color: red;
+  }
