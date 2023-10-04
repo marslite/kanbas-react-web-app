@@ -120,7 +120,7 @@ html, body{
 /* bootstrap.min.css | http://localhost:3000/vendors/bootstrap/css/bootstrap.min.css */
 
 
-
+/* 
   a.list-group-item:nth-child(2) {
     border-left: solid green;
   }
@@ -148,7 +148,7 @@ html, body{
   a.list-group-item:nth-child(6) {
     border-left: solid green;
   }
-  
+   */
 
   .rou {
     border-radius: 26px !important;
@@ -164,7 +164,7 @@ html, body{
     margin-left: 40px;
   }
 
-  .profile-divisor > nsav:nth-child(1) {
+  .profile-divisor > nav:nth-child(1) {
     --bs-breadcrumb-divider: '>';
     margin-left: -91px;
     margin-top: -25px;
@@ -176,19 +176,29 @@ html, body{
     width: 399px;
    }
 
-   .displayer{
+   .smaller{
+    font-size: smaller;
+   }
+
+
+   .col-sm-10 {
+    display: inline-block; 
+    margin-left: 32px;
+  }
+  
+
+  .inliner{
     display: inline-block;
+  }
 
-   }
+  .ml-cs{
+    margin-left: 35px;
+  }
 
-   .one-grid{
-    clear: both;
-   }
+  .ml-cs2{
+    margin-left: 68rem;
+  }
 
-   .wd-grid-col-half-page{
-    width: 50%;
-    float: left;
- }
-
-
-
+  .ml-st{
+    font-style: italic;
+  }
