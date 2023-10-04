@@ -34,12 +34,26 @@
     margin-left: 20px;
 }
 
-.profile-divisor {
+/* .profile-divisor {
     display: flex;
     flex-direction: column;
     margin-top: 61px; 
     margin-left: 0;  
 }
+ */
+
+ .margo{
+  margin-left: -129px;
+ }
+
+
+.profile-divisor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 29px; 
+  margin-left: 0;  
+}
+
 
 .profile-divisor .float-end {
     margin-top:-43px;
@@ -189,6 +203,5 @@ html, body{
     width: 50%;
     float: left;
  }
-
 
 

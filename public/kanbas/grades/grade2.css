@@ -34,11 +34,18 @@
     margin-left: 20px;
 }
 
-.profile-divisor {
+/* .profile-divisor {
     display: flex;
     flex-direction: column;
     margin-top: 61px; 
     margin-left: 0;  
+} */
+
+.profile-divisor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 19px; 
+  margin-left: 0;  
 }
 
 .profile-divisor .float-end {
@@ -199,4 +206,8 @@ html, body{
 
   .tab-strip{
     background-color: #f2f2f2;
+  }
+
+  .margo{
+    margin-left: -95px;
   }

@@ -19,6 +19,14 @@ html, body {
 }
 
 
+#ass_id{
+    color: black;
+    background-color: white;
+    border-left: 3px solid;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
 
 .main {
     flex: 1;
@@ -209,9 +217,14 @@ html, body {
     width: 72.4rem;
   }
   
-  #profile_tab {
+  /* #profile_tab {
     margin-top: -69rem;
     margin-left: 363px;
+} */
+
+#profile_tab {
+    margin-top: -70rem;
+    margin-left: 360px;
 }
 
 
