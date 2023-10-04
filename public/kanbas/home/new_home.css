@@ -76,7 +76,7 @@ html, body {
 .link_space {
     margin-bottom: 15px;
     color: red;
-    text-decoration: none;
+    text-decoration:solid;
 }
 
 #dash_id {
