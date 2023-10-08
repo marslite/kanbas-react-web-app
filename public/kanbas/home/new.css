@@ -1,0 +1,143 @@
+ html, body{
+    height: 100%;
+    margin: 0;
+}
+#nav_tab {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 97px;
+    height: 100%;
+    background-color: black;
+
+}
+
+
+
+
+/* ... (rest of your CSS, which remains unchanged) ... */
+
+
+.fl-cnt{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+
+
+
+
+#nav_tab a {
+    margin-bottom: 5px;
+}
+
+
+#nav_tab a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.temp{
+    width: 88rem;
+}
+
+.link_dec{
+    color: white;
+}
+
+.spacer{
+    margin-bottom: 5px;
+}
+
+.fix-tab {
+    display: flex;
+    flex-direction: column;
+    margin-top: -65rem;
+    margin-left: 102px;
+    /* border: solid; */
+    width: 190px;
+  }
+
+  .spacing_list{
+    margin-left: 18rem;
+  }
+
+  .flex-enabler{
+    display: flex;
+  }
+
+.link_space{
+    /* margin-top:20px; */
+    margin-bottom:15px;
+    color: red;
+    text-decoration: none;
+  }
+
+#dash_id{
+    background-color: white;
+    color: red;
+}
+
+#nav2_tab {
+    display: flex;
+    flex-direction: column;
+    height: 45rem;
+    margin-left: 5px;
+    margin-top: 64px;
+    margin-top: 58px;
+  }
+
+
+  #nav2_tab a{
+    text-decoration: none;
+    text-align: left;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+
+  #profile_tab {
+    margin-top: -69rem;
+    margin-left: 334px;
+  }
+  
+
+  .spacing_nav{
+    margin-top: -11px;
+  }
+
+
+.check-bg{
+    color: green;
+}
+
+.ad_dd{
+    display: inline-block;
+}
+
+.sub-mar{
+    margin-left: 20px !important;
+
+}
+
+.marg-fx{
+    margin-top: -46px;      
+}
+
+
+.course_stat {
+    display: flex;
+    flex-direction: column;
+    margin-left: 18rem;
+  }
+  
+
+
+
+  

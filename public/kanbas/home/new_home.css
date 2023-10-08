@@ -1,0 +1,281 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#nav_tab {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 97px;
+    background-color: black;
+    flex: 0 0 auto; /* Do not grow or shrink, keep the original width */
+}
+
+.fl-cnt {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+
+#ass_id{
+    color: black;
+    background-color: white;
+    border-left: 3px solid;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; 
+    margin-left: -138px;
+    margin-top: 72rem;
+}
+
+#nav_tab a {
+    margin-bottom: 5px;
+}
+
+#nav_tab a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.link_dec {
+    color: white;
+}
+
+.spacer {
+    margin-bottom: 5px;
+}
+
+.fix-tab {
+    display: flex;
+    flex-direction: column;
+    margin-top: -65rem;
+    margin-left: 102px;
+    width: 190px;
+}
+
+.spacing_list {
+    margin-left: 18rem;
+}
+
+
+.flex-enabler {
+    display: flex;
+}
+
+.link_space {
+    margin-bottom: 15px;
+    color: red;
+    text-decoration:solid;
+}
+
+#dash_id {
+    background-color: white;
+    color: red;
+}
+
+#profile_tab {
+    margin-top: -69rem;
+    margin-left: 334px;
+}
+
+.spacing_nav {
+    margin-top: -11px;
+}
+
+.check-bg {
+    color: green;
+}
+
+.ad_dd {
+    display: inline-block;
+}
+
+.sub-mar {
+    margin-left: 20px !important;
+}
+
+.marg-fx {
+    margin-top: -46px;
+}
+
+
+.container-fluid.col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* #container-edits{
+    border: solid black;
+
+    margin-top: -10px;
+    margin-left: -224px;
+} */
+
+#container-edits {
+    border: solid black;
+
+    margin-top: -10px;
+    margin-left: -3px;
+}
+
+/* #container-edits {
+    border: solid white;
+  }
+   */
+
+   .list-group-item > a{
+    text-decoration: none;
+   }
+
+
+   .inliner{
+    display: inline-flex;
+   }
+
+   .spaced{
+    margin-right: 2px;
+   }
+
+
+
+
+
+/* Element | http://localhost:3000/kanbas/home/new_home.html */
+
+.row {
+    width: 64rem;
+    margin-top: 76px;
+  }
+  
+  /* Element | http://localhost:3000/kanbas/home/new_home.html */
+  
+  #profile_tab > div:nth-child(2) {
+    margin-left: -261px;
+    margin-top: 14px;
+    position: ;
+    position: fixed;
+  }
+  
+  /* new_home.css | http://localhost:3000/kanbas/home/new_home.css */
+  
+  /* #container-edits {
+    /* margin-top: -10px; */
+    /* margin-left: -3px; */
+    /* margin-left: -5px; */
+  /* } */ 
+  
+
+ .margo{
+        color: gray;
+        margin-left: -13rem;
+      
+ }
+
+
+  #container-edits {
+    /* margin-top: -10px; */
+    /* margin-left: -3px; */
+    margin-left: 0px;
+  }
+  /* Element | http://localhost:3000/kanbas/home/new_home.html */
+  
+  #profile_tab > div:nth-child(2) > hr:nth-child(2) {
+    /* width: 1300px; */
+    /* margin-left: -231px; */
+    width: 702px;
+    margin-left: 237px;
+  }
+  
+  /* Element | http://localhost:3000/kanbas/home/new_home.html */
+  
+  div.float-end:nth-child(1) {
+    position: fi;
+  }
+
+
+  /* No responsiveness because the requirements  */
+  /* all over the place */
+
+  /* .row {
+    margin-top: 59px;
+    width: 65.4rem;
+  } */
+
+  .row {
+    margin-top: 59px;
+    width: 72.4rem;
+  }
+  
+  /* #profile_tab {
+    margin-top: -69rem;
+    margin-left: 363px;
+} */
+
+#profile_tab {
+    margin-top: -70rem;
+    margin-left: 360px;
+}
+
+
+
+
+.spac {
+    margin-top: 76px;
+}
+
+
+
+#profile_tab > div:nth-child(2) > span:nth-child(2) > hr:nth-child(1) {
+    width:768px;
+    text-align:left;
+    margin-left: -251px;
+  }
+  
+
+  #profile_tab > div:nth-child(2) {
+    margin-left: 263px;
+    /*! margin-top: 14px; */
+    position: ;
+    position: fixed;
+    width: 539px;
+  }
+
+  .fixed {
+    margin-left: 75rem;
+    margin-top: -64rem;
+  }
+
+
+
+/* new_home.css | http://localhost:3000/kanbas/home/new_home.css */
+
+
+.btn-width{
+    width: 15rem;  
+}
+
+.btn-pbs{
+    width: 120px;
+}
+
+.btn-unp{
+    width: 122px;
+}
+
+
+#profile_tab > div:nth-child(2) {
+    margin-left: 181px;
+    position: fixed;
+    width: 622px;
+  }

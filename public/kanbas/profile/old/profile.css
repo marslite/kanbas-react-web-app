@@ -1,0 +1,192 @@
+
+#nav_tab {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 97px;
+}
+
+#nav_tab a {
+    margin-bottom: 5px;
+}
+
+
+.fa-7x{
+    margin-top: 3px;
+    margin-left: -2px;
+}
+.arrow-pos{
+    margin-left: 8px;
+    margin-top: 6px;
+}
+
+#url-link{
+    display: flex;
+     width: 183px;
+}
+
+.marg{
+    width: 209px;
+}
+
+.lolo{
+    margin-left: 322px;
+}
+
+.add_link_margin{
+    margin-left: 12px;
+}
+
+#name_tag{
+    display: flex;
+    margin-left: 20px
+}
+#divisor{
+    display: flex;
+    margin-left: -3px;
+}
+
+.spacer{
+    margin-bottom: 5px;
+}
+
+.spacingUp{
+    margin-top: 19px;
+    border-left: gray;
+}
+
+.x-btn{
+    display: inline;
+    color: red;
+}
+
+.splacer{
+    margin-right: 4px;
+}
+
+#acc_id{
+    background-color: white;
+    color: red;
+}
+
+
+#prof_id{
+    color: black;
+    background-color: white;
+    border-left: 3px solid;
+    margin-left: -4px;
+    padding-left: 9px;
+}
+
+.link_dec{
+    color: white;
+}
+
+.link_nav2_dec{
+    color: red;
+}
+
+  #nav2_tab {
+    display: flex;
+    flex-direction: column;
+    height: 45rem;
+    margin-left: 5px;
+    margin-top: 64px;
+    margin-top: 58px;
+  }
+
+
+  #nav2_tab a{
+    text-decoration: none;
+    text-align: left;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  
+
+
+  #nav_t {
+    margin-top: 22px;
+    width: 190px;
+  }
+
+  #nav_tab a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+#profile_tab {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 0rem; */
+    margin-top: -12px;
+
+    margin-left: 23px;
+}
+
+
+
+
+
+
+#e_nav_tab {
+    display: flex;
+    flex-direction: column;
+    /*! margin-left: 13px; */
+    /*! width: 155px; */
+}
+
+#e_name_tag{
+    display: flex;
+    margin-left: 20px
+}
+#e_divisor{
+    display: flex;
+    margin-left: -3px;
+}
+
+.spacingUp{
+    margin-top: 19px;
+}
+
+#e_profile_tab {
+    display: flex;
+    flex-direction: column;
+    width: 461px;
+    margin-left: 6px;
+}
+
+#e_body_space{
+    display: flex;
+    width: 109%;
+    margin-left: 1px;
+}
+
+#e_nav_tab2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 18px;      
+}
+
+
+
+#profile_divisor {
+    display: flex;
+    flex-direction: column;  
+
+    margin-left: -226px;
+    margin-bottom: -26px;
+    margin-top: 16px;
+}
+
+
+#profile_divisor p{
+    text-decoration: none;
+}
+  

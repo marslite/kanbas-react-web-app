@@ -1,0 +1,43 @@
+#td_nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-top: 41px; */
+    margin-left: 20px;
+}
+#nav_tab{
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+    width: 88px;
+}
+
+#td_{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+#selection_tab{
+    display: flex;
+    margin-left: 20px;
+}
+#student_tab{
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
+}
+#filter_btn{
+    margin-top: 20px;
+    width: 102px;
+}
+#student_btn{
+    width: 183px;
+}
+
+#assignment_btn{
+    width: 183px;
+}
+.spacingDown{
+    margin-bottom: 19px;
+}

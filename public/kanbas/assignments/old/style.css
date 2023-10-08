@@ -1,0 +1,121 @@
+#nav_tab {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 97px;
+    background-color: black;
+    height: 100%;
+    flex-grow: 1 !important;
+}
+
+.fl-cnt{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+#nav_tab a {
+    margin-bottom: 5px;
+}
+
+
+#nav_tab a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
+  .nav_2 {
+    position: fixed;  
+    top: 130px;  
+    left: 118px;  
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+ .profile-divisor {
+     position: fixed; 
+    display: flex;
+    flex-direction: column;
+    top: 61px;   
+    left: 329px;
+} 
+
+.profile-divisor .float-end {
+    margin-top:-43px;
+} 
+
+/* Here's the responsive one that NEEDS fixing */
+
+/* .profile-divisor {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16rem;
+    margin-top: -996px;
+} */
+
+
+
+  .link_space{
+
+    margin-bottom:15px;
+    color: red;
+    text-decoration: none;
+  }
+  
+
+
+.link_dec{
+    color: white;
+}
+
+#course_id{
+    background-color: white;
+    color: red;
+}
+
+
+html, body{
+    height: 100%;
+    margin:0;
+} 
+
+
+.second_nav {
+    margin-left: 32rem;
+    margin-top: -67rem;
+  }
+  
+
+  .src_1{
+    margin-left: -151px;
+  }
+
+.btn_1{
+    margin-left: 439px;
+}
+
+
+
+
+  .ass {
+    /* border: solid; */
+    margin-left: 22rem;
+    margin-top: -66rem;
+    width: 65rem;
+  }
+  
+  
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+      

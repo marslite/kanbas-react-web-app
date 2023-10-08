@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignments Edit</title>
+    <style>
+        #nav_tab{
+            display: flex;
+            flex-direction: column;
+            margin-left: 13px;
+            width: 88px;
+        }
+
+        #selection_tab{
+            display: flex;
+            margin-left: 20px;
+        }
+        #divisor{
+            display: flex;
+            margin-left: -3px;
+        }
+
+        #edit_tab{
+            display: flex;
+            flex-direction: column;
+            margin-left: 14px;
+        }
+
+        .spacingDown{
+            margin-bottom: 19px;
+        }
+
+        .spacingUp{
+            margin-top: 19px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <table width="50%" border="2" >
+        <tbody>
+            <tr valign="baseline">
+                <td  id="nav_tab">
+
+                    <li><a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/account">Account</a></li>
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/home.html">Courses</a></li>
+                    <li><a href="">Calendar</a></li>
+                    <li><a href="">Inbox</a></li>
+                    <li><a href="">History</a></li>
+                    <li><a href="">Studio</a></li>
+                    <li><a href="">Commons</a></li>
+                    <li><a href="">Help</a></li>
+                </td>
+
+                <td >
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Modules</a></li>
+                    <li><a href="">Piazza</a></li>
+                    <li><a href="">Zoom Meetings</a></li>
+                    <li><a href="http://localhost:3000/kanbas/assignments/">Assignments</a></li>
+                    <li><a href="">Quizzes</a></li>
+                    <li><a href="">Grades</a></li>
+                    <li><a href="">People</a></li>
+                    <li><a href="">Panopto Video</a></li>
+                    <li><a href="">Discussions</a></li>
+                    <li><a href="">Announcements</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="">Files</a></li>
+                    <li><a href="">Rubrics</a></li>
+                    <li><a href="">Outcomes</a></li>
+                    <li><a href="">Collaborations</a></li>
+                    <li><a href="">Syllabus</a></li>
+                    <li><a href="">Settings</a></li>
+                </td>
+
+                <td id="selection_tab">
+                    <select >
+                        <option value="val_1">SpeedGrader</option>
+                    </select>
+
+                </td>
+                <td id="divisor">
+                    <hr style="width:52%;text-align:left;margin-left:24px">
+                </td>
+
+                <td id="edit_tab">
+                    <h1>Assignment Name</h1>
+                    <input type="text" placeholder="A1 - ENV + HTML" style="margin-bottom: 19px;">
+
+                    <form id="textarea" margin-bottom: 19px;>
+                        <textarea cols="30" rows="2">This is the assignment description</textarea>
+                    </form>
+
+                    <label class="spacingUp"> Points</label>
+                    <input  type="number">
+
+                    <label class="spacingUp"> Assignment Group</label>
+                    <select>
+                        <option value="op_1">ASSIGNMENTS</option>
+                    </select>
+
+                    <label class="spacingUp""> Display Grade as</label>
+                    <select>
+                        <option value="op_2">Percentage</option>
+                    </select>
+
+                    <label class="spacingUp">Submission Type</label>
+                    <select>
+                        <option value="op_3">Online</option>
+                    </select>
+
+                    <div class="spacingUp">
+
+                    <label > Online Entry Options</label>
+                    <br/>
+                    <input type="checkbox" value="text" name="entry-options" id="text-entry">
+                    <label for="text-entry">Text Entry</label><br/>
+                    <input type="checkbox" value="text" name="entry-options" id="web-url">
+                    <label for="web-url">Website Url</label><br/>
+                    <input type="checkbox" value="text" name="entry-options" id="media-rec">
+                    <label for="media-rec">Media Recordings</label> <br/>
+                    <input type="checkbox" value="text" name="entry-options" id="stud_ann">
+                    <label for="stud_ann">Student Annotation</label><br/>
+                    <input type="checkbox" value="text" name="entry-options" id="file_up">
+                    <label for="file_up">File Uploads</label><br/>    
+                    </div>
+
+                    <label class="spacingUp" >Submission Attempts</label>
+                    <select>
+                        <option value="op_4">Unlimited</option>
+                    </select>
+
+                    <label class="spacingUp">Plagiarism Reviews</label>
+                    <select>
+                        <option value="op_5">None</option>
+                    </select>
+                    <div class="spacingUp">
+                        <label > Group Assignment</label><br/>
+                        <input type="checkbox" value="text" name="entry-options" id="grp-assg">
+                        <label for="grp-assg">This is a group assignment</label><br/>
+                    </div>
+
+                    <div class="spacingUp">
+                        <label > Peer Reviews</label><br/>
+                        <input type="checkbox" value="text" name="entry-options" id="peer-review">
+                        <label for="peer-review">Require Peer Reviews</label><br/>
+                    </div>
+
+                    <!-- <div class="spacingUp">
+                        <label>Assign</label><br/>
+                        <label>Assign to</label>
+                        <input type="text" placeholder="Everyone"><br/> 
+                    </div> -->
+
+                    <label class="spacingUp">Assign</label><br/>
+                    <label>Assign to</label>
+                    <input type="text" placeholder="Everyone"><br/> 
+
+                    <label class="spacingUp" for="due-date">
+                        Due 
+                    </label>
+                    <input type="date" id="due-date" value="2021-01-01"> <br/>
+
+                    <label class="spacingUp" for="av-from">
+                        Available from 
+                    </label>
+                    <input type="date" id="av-from" value="2021-01-01"> <br/>
+
+                    <div class="spacingUp">
+                        <button onclick="window.location.href='https://a1--silly-boba-52f9d4.netlify.app/kanbas/assignments/'">Cancel</button>
+                        <button onclick="window.location.href='https://a1--silly-boba-52f9d4.netlify.app/kanbas/assignments/'">Save</button>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>

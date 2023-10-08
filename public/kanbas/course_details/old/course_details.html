@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../course_details/course_details.css">
+    <title>Course Details</title>
+
+</head>
+<body>
+
+    <table width="100%" border="7">
+        <tbody>
+            <tr valign="baseline">
+                <td id="td_nav" >
+                    <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/home">Home</a>
+                    <a href="">Modules</a>
+                    <a href="">Piazza</a>
+                    <a href="">Zoom Meetings</a>
+                    <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/assignments/">Assignments</a>
+                    <a href="">Quizzes</a>
+                    <a href="https://a1--silly-boba-52f9d4.netlify.app/kanbas/grades.html">Grades</a>
+                    <a href="">People</a>
+                    <a href="">Panopto Video</a>
+                    <a href="">Discussions</a>
+                    <a href="">Announcements</a>
+                    <a href="">Pages</a>
+                    <a href="">Files</a>
+                    <a href="">Rubrics</a>
+                    <a href="">Outcomes</a>
+                    <a href="">Collaborations</a>
+                    <a href="">Syllabus</a>
+                    <a href="">Settings</a>
+     
+                </td>
+
+
+                <td id="edit_tab">
+                    <h1>Course Details</h1>
+                    <div style="display: inline;">
+                        <label style="display: inline;"><b>Image:</b></label>
+                        <!-- <input type="image"  style="margin-bottom: 19px; display: inline;"> -->
+                        <input type="file">
+
+                    </div> <br/>
+
+                    <div class="spacingUp">
+                        <label><b>Name:</b></label>
+                        <label>CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]</label>
+
+                    </div>
+
+                    <div class="spacingUp" >
+                        <label><b>Course Code:</b></label>
+                        <label >CS4550.12631.202310</label>
+
+                    </div>
+
+                    <div class="spacingUp">
+                        <label><b>Blueprint Course:</b></label>
+                        <label>No</label>
+                    </div>
+
+                    <div class="spacingUp">
+                        <label for="course-enable"><b>Course Template:</b></label>
+                        <input type="checkbox" name="course_template" id="course-enable">
+                        <label >Enabe course as a Course Template</label>
+                    </div>
+
+
+
+                    <div class="spacingUp">
+                        <label>Time Zone:</label>
+                        <select>
+                            <option value="val7"> Eastern Time (US & Canada) (-05:00/-04:00)</option>
+                        </select>
+                    </div>
+
+                    <div class="spacingUp">
+                        <label><b>SIS ID:</b></label>
+                        <label>CS4550.12631.202410</label>
+                    </div>
+
+                    <div class="spacingUp">
+                        <label><b>Subaccount:</b></label>
+                        <label><a href="#">CS Undergrad</a></label>
+                    </div>
+
+                    <div class="spacingUp">
+                        <label><b>Term:</b></label>
+                        <label>202410_1_Fall 2023 Semester Full Term</label>
+                    </div>
+                    
+                    <div class="spacingUp">
+                        <label><b>Partecipation:</b></label>
+                        <select>
+                            <option value="op_1">Term</option>
+                        </select>
+                        <p>Course partecipation is limited to <b>term</b> start and end dates.</p>
+                            <label for="start-date">Start</label><br/>
+                            <input type="date" name="date" id="start-date"><br/>
+                            <label for="end-date">End</label><br/>
+                            <input type="date" name="date" id="end-date"> <br/>
+                            <input type="checkbox" name="restrict" id="restrict_stud1">
+                            <label for="restrict_stud1">Restrict students from viewing course before term start date</label><br/>
+                            <input type="checkbox" name="restrict" id="restrict_stud2">
+                            <label for="restrict_stud2"> Restrict students from viewing course after term end date  </label>
+                    </div>
+
+                    <div class="spacingUp">
+                        <label><b>Default due time:</b></label> 
+                        <select>
+                            <option value="val1">Account default (11:59pm)</option><br/>
+                        </select>
+                        <p>This influences the user interface for setting due dates. It does not change the time <br/> due for any exisisting assignments.</p>
+                    </div>
+
+                    <div class="spacingUp">
+                        <b style="display: inline;">File Storage:</b>
+                        <p style="display: inline;">10000 megabytes</p>
+                    </div>
+
+                    <div class="spacingUp">
+                        <b>Large Course:</b>
+                        <input type="checkbox" style="display: inline;">
+                        <p style="display: inline;">Launch SpeedGrader Filtered by Student Group</p>
+                    </div>
+
+                    <div class="spacingUp">
+                        <b>Grading Scheme:</b>
+                        <input type="checkbox" style="display: inline;">
+                        <p style="display: inline;">Enable course grading scheme</p>
+                    </div>
+
+                    <div class="spacingUp">
+                        <b style="display: inline;">License:</b>
+                        <select style="display: inline;">
+                            <option value="val3">(Private Copyrighted)</option>
+                        </select>
+                    </div>
+
+                    <div class="spacingUp">
+                        <b style="display: inline;">File Copyright</b>
+                        <input type="checkbox" style="display: inline;">
+                        <p style="display: inline;">Copyright and license information must be provided for the files before they <br/> are published </p>
+
+                    </div>
+
+                    <div class="spacingUp">
+                        <b style="display: inline;">Visibility:</b>
+                        <p style="display: inline;">If you need to make your course public please contact your <br/> administrator/support</p> <br/>
+                    
+                        <select>
+                            <option value="val4">Course</option>
+                        </select><br/>
+
+                        <input  type="checkbox" style="display: inline;">
+                        <p style="display: inline;"> Include this course in the public course index</p>
+                    </div>
+
+                    <div class="spacingUp">
+                        <b style="display: inline;">Format: </b>
+                        <select>
+                            <option value="val5">On-Campus</option>
+                        </select>
+                    </div>
+
+                    <div class="spacingUp">
+                        <b>Mastery Paths: </b>
+                        <input style="display: inline;" type="checkbox">
+                        <p style="display: inline;">Enable individual learning paths for students based on assesment</p>
+                    </div>
+
+                    <div class="spacingUp">
+                        <b style="display: inline;">Description:</b>
+                        <textarea cols="30" rows="5"></textarea> <br/>
+                        <a href="#">more options</a>
+                    </div>
+
+                    <div class="spacingUp">
+                        <button>Update Course Details</button>
+
+                    </div>
+
+                    
+                </td>
+
+            </tr>
+        </tbody>
+
+    </table>
+    
+</body>
+</html>
