@@ -4,8 +4,8 @@ import BooleanVairables from "./BooleanVariables";
 import IfElse from "./IfElse";
 import TernaryOperator from "./TernaryOperator";
 import WorkingWithFunctions from "./WorkingWithFunctions";
-import ArrowFunctions from "./ArrowFunctions";
-import ImpliedReturn from "./ImpliedReturn";
+import WorkingWithArrays from "./WorkingWithArrays";
+
 function JavaScript(){
     console.log('Hello World!');
     return(
@@ -17,8 +17,8 @@ function JavaScript(){
             <IfElse/>
             <TernaryOperator/>
             <WorkingWithFunctions/>
-            <ArrowFunctions/>
-            <ImpliedReturn/>
+            <WorkingWithArrays/>
+
         </div>
     )
 }
