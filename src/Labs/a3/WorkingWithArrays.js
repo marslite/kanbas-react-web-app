@@ -1,4 +1,10 @@
+import ArrayIndexAndLength from "./ArrayIndexAndLength";
+import AddingAndRemovingDataToFromArrays from "./AddingAndRemovingDataToFromArrays.js";
+import ForLoops from "./ForLoops";
+import MapFunction from "./MapFunction";
+
 function WorkingWithArrays(){
+
     var functionScoped =2;
     let blockScoped = 5;
     const constant1 = functionScoped - blockScoped;
@@ -19,6 +25,10 @@ function WorkingWithArrays(){
         <p>numberArray1 = {numberArray1}</p> <br/>
         <p>stringArray1 = {stringArray1}</p> <br/>
         <p>variableArray1 = {variableArray1}</p>
+        <ArrayIndexAndLength/>
+        <AddingAndRemovingDataToFromArrays/>
+        <ForLoops/>
+        <MapFunction/>
         </>
     );
 }
