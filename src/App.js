@@ -29,6 +29,7 @@ function App() {
       <HelloWorld/>
       <Labs/>
       <Kanbas/>
+      <h1>Hello world 2nd edition</h1>
 
     </div>
   );
