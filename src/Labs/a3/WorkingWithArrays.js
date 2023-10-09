@@ -2,6 +2,8 @@ import ArrayIndexAndLength from "./ArrayIndexAndLength";
 import AddingAndRemovingDataToFromArrays from "./AddingAndRemovingDataToFromArrays.js";
 import ForLoops from "./ForLoops";
 import MapFunction from "./MapFunction";
+import JsonStringify from "./JsonStringify";
+import FindFunction from "./FindFunction";
 
 function WorkingWithArrays(){
 
@@ -29,6 +31,8 @@ function WorkingWithArrays(){
         <AddingAndRemovingDataToFromArrays/>
         <ForLoops/>
         <MapFunction/>
+        <JsonStringify/>
+        <FindFunction/>
         </>
     );
 }
