@@ -4,6 +4,8 @@ import ForLoops from "./ForLoops";
 import MapFunction from "./MapFunction";
 import JsonStringify from "./JsonStringify";
 import FindFunction from "./FindFunction";
+import FindIndex from "./FindIndex";
+import FilterFunction from "./FilterFunction";
 
 function WorkingWithArrays(){
 
@@ -33,6 +35,8 @@ function WorkingWithArrays(){
         <MapFunction/>
         <JsonStringify/>
         <FindFunction/>
+        <FindIndex/>
+        <FilterFunction/>
         </>
     );
 }
