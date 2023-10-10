@@ -3,6 +3,8 @@ import './App.css';
 import Labs from "./Labs";
 import HelloWorld from './Labs/a3/HelloWorld';
 import Kanbas from './Kanbas';
+import { HashRouter } from 'react-router-dom';
+import { Routes, Route,  Navigate } from 'react-router';
 
 
 function App() {
@@ -24,14 +26,18 @@ function App() {
     //     </a>
     //   </header>
     // </div>
+    <HashRouter>
     <div>
-      {/* <h1> Hello world</h1> */}
-      <HelloWorld/>
-      <Labs/>
-      <Kanbas/>
-      <h1>Hello world 2nd edition</h1>
+      <Routes>
 
+        <Route path='/' element={<Navigate to="/Labs/"/>}/>
+        <Route path='/hello' element={<HelloWorld/>}/>
+        <Route path='/Labs' element={ <Labs/>}/>
+        <Route path='/Kanbas' element={<Kanbas/>}/>
+
+      </Routes>
     </div>
+    </HashRouter>
   );
 }
 
