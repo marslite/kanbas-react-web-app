@@ -1,4 +1,5 @@
 import JavaScript from "./JavaScript";
+import PathParamters from "./PathParameters";
 
 function Assignment3(){
     return(
@@ -7,6 +8,7 @@ function Assignment3(){
             {/* <h1 style={{marginLeft: '-30px'}}>Assignment 3</h1> */}
             <h1>Assignment3</h1>
             <JavaScript/>
+            <PathParamters/>
             
         </div>
     );
