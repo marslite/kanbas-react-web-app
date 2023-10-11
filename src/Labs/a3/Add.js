@@ -7,8 +7,12 @@ function Add(){
     return(
         <div>
             <h2>Add Parameters</h2>
-            {a} + {b} = {parseInt(a) + parseInt(b)}
+            {a} + {b} = {parseInt(a) + parseInt(b)}<br/>
+            {/* {a} + {a} = { parseInt(a) + parseInt(a)}<br/>  */}
+            {/* {b} + {b} = { parseInt(b) + parseInt(b)}  */}
             <h6>Succesfully parsed /a3/add/{a}/{b}</h6>
+            {/* <button>{parseInt(a) + parseInt(b)}</button> */}
+
         </div>
     );
 }

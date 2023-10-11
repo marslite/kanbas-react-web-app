@@ -8,7 +8,7 @@ function PathParamters(){
             <Link to="/Labs/a3/add/1/2">1 + 2</Link> <br/>
             <Link to="/Labs/a3/add/3/4">3 + 4</Link> <br/>
             <Routes>
-                <Route path="/a3/add/:a/:b" element={<Add />}/>
+                <Route path="a3/add/:a/:b" element={<Add />}/>
             </Routes>
 
         </div>
