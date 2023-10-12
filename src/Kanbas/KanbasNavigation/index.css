@@ -36,7 +36,7 @@
 
 
 .course_id{
-    background-color: white;
+    background-color: white !important;
     color: red !important;
 } 
 

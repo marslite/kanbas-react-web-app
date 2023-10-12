@@ -8,6 +8,7 @@ import { FaHistory } from 'react-icons/fa';
 import { BsFillMusicPlayerFill } from 'react-icons/bs';
 import { RiCreativeCommonsFill } from 'react-icons/ri';
 import { BiSolidHelpCircle } from 'react-icons/bi'; 
+import logo from '../KanbasNavigation/ic_logo.png'
 
 
 import { useLocation, Link } from "react-router-dom";
@@ -34,8 +35,8 @@ function KanbasNavigation(){
         <div className="kanbas_container">
         <div className="course_index">
             <a href={`/Kanbas/LOL}`} className= "link_dec">
-                {/* <i class="fa fa-user fa-2x spacer" aria-hidden="true"></i><br/> */}
-                NEU LOGO
+
+                <img src={logo}/>
             </a>
     
             {links.map((link,index) => (
