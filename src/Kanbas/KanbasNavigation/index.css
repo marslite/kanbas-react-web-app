@@ -35,10 +35,20 @@
 }
 
 
-#course_id{
+.course_id{
     background-color: white;
-    color: red;
+    color: red !important;
 } 
+
+.wd-icon{
+    font-size: 2em;
+    justify-items: center;
+    /* border:solid red; */
+    align-self: center;
+    color: red;
+}
+
+
 
 /* .nav-st {
     width: 150px;
