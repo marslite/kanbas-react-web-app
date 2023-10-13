@@ -14,3 +14,11 @@
     margin-top: 30px !important;
     margin-bottom: 40px !important;
 }
+
+.db-icon{
+    font-size: 23px;
+    justify-items: center;
+    /* border:solid red; */
+    align-self: center;
+    color: black;
+}
