@@ -1,0 +1,19 @@
+.test{
+    border: solid white;
+    /* border: solid black; */
+}
+
+.icon-edit{
+    margin-top: 20px;
+    color: green;
+    font-size: 23px;
+}
+
+.icon-edit2{
+    margin-top: 20px;
+    color: black;
+    font-size: 23px;
+
+}
+
+
