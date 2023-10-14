@@ -3,7 +3,9 @@
     flex-direction: column;
     height: 100vh;
     width: 97px;
-    border: solid black;
+    /* border: solid black; */
+    margin-top: 80px;
+    margin-left: 10px;
 }
 
 .link_space{

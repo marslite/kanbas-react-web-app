@@ -17,7 +17,11 @@ function Dashboard(){
         <div>
 
             <h1>Dashboard</h1>
+            <hr style={{width: "1300px", textAlign: "left", marginLeft:"-231px"}}/>
+
             <h4>Published Courses</h4>
+            <hr style={{width: "900px", textAlign: "left", marginLeft:"-231px"}}/>
+
             <div className="containter-fluid flex-wrap moved">
                 <div className="row spacing">
 

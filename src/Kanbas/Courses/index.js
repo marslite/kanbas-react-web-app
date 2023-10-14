@@ -15,6 +15,9 @@ function Courses(){
             <h4 className="spaced"> 
             <AiOutlineMenu className='courses-icon'/>
                 Course {course.name}
+                {/* <hr style="width:1300px;text-align:left;margin-left: -231px;">  */}
+                <hr style={{width: "1300px", textAlign: "left", marginLeft:"-231px"}}/>
+
                 </h4>
             <CourseNavigation/>
             <div>
