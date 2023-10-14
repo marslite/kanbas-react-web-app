@@ -1,0 +1,22 @@
+.nav_cours{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 97px;
+    border: solid black;
+}
+
+.link_space{
+    margin-bottom: 15px;
+    color: red;
+    text-decoration: none;
+}
+
+
+.ass_id{
+    color: black;
+    background-color: white;
+    border-left: 3px solid;
+    text-decoration: none;
+    margin-bottom: 15px;
+}

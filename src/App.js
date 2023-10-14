@@ -31,7 +31,7 @@ function App() {
       <Routes>
 
         <Route path='/' element={<Navigate to="/Labs/"/>}/>
-        <Route path='/Labs/*' element={ <Labs/>}/>
+        <Route path='/Labs/' element={ <Labs/>}/>
         <Route path='/hello' element={<HelloWorld/>}/>
         <Route path='/kanbas/*' element={<Kanbas/>}/>
 
