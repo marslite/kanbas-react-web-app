@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 import db from "../../Kanbas/Database";
 import "./index.css"
+import { AiOutlineMenu } from "react-icons/ai";
 
 function Courses(){
     const {courseId} = useParams();
@@ -8,7 +9,11 @@ function Courses(){
 
     return(
         <div>
-            <h4 className="spaced">Course {course.name}</h4>
+            
+            <h4 className="spaced"> 
+            <AiOutlineMenu className='courses-icon'/>
+                Course {course.name}
+                </h4>
         </div>
     )
 }
