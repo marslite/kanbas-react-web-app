@@ -6,6 +6,7 @@ import CourseNavigation from "./CourseNavigation";
 import Modules from "./Modules";
 import { Breadcrumb } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
+import Home from "./Home";
 
 
 function Courses(){
@@ -39,9 +40,9 @@ function Courses(){
             <div>
                 <div className="overflow-y-scroll position-fixed bottom-0 end-0" style={{left: "320px", top: "50px",}}>
                     <Routes>
-                        //Routing need fixing
+                        //Routing needs fixing
                         <Route path="/" element={<Navigate  to="Home" />} />
-                        <Route path="Home" element={<h1 className="home_s">Home  </h1> } />
+                        <Route path="Home" element={<Home/> } />
                         <Route path="Modules" element={<Modules/>} />
                         <Route path="Assignments" element={<h1 className="home_s">Assignments</h1>} />
                         <Route  path="Assignments/:assignmentId" element={<h1 className="home_s">Assignments Editor</h1>}/>

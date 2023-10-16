@@ -59,7 +59,7 @@ function ModuleList(){
                         {
                             modules.filter((module) => module.course === courseId)
                             .map((module,index) => (
-                                <li key={index} className="list-group-item list-group-item-action">
+                                <li key={index} className="list-group-item list-group-item-secondary spac">
                                     <h3>{module.name}
                                     <div className="float-end">
                                     <AiFillCheckCircle className='icon-edit'/>
@@ -69,9 +69,10 @@ function ModuleList(){
                                     <p>{module.description}</p>
 
                                 </li>
+                                    
+                                
                             ))
                         }
-
 
                     </ul>
 

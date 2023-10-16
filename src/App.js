@@ -30,8 +30,8 @@ function App() {
     <div>
       <Routes>
 
-        <Route path='/' element={<Navigate to="/Labs/"/>}/>
-        <Route path='/Labs/' element={ <Labs/>}/>
+        {/* <Route path='/' element={<Navigate to="/Labs/"/>}/> */}
+        <Route index element={ <Labs/>}/>
         <Route path='/hello' element={<HelloWorld/>}/>
         <Route path='/kanbas/*' element={<Kanbas/>}/>
 
