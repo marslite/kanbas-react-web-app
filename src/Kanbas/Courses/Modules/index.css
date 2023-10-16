@@ -56,3 +56,16 @@
    .moduleBtn{
     margin-top: 5px;
    }
+
+
+   .plus-icon{
+    font-size: 17px;
+    margin-top: -2px;
+   }
+
+   .check-icon{
+    font-size: 17px;
+    color: green;
+    margin-right: 4px;
+    margin-top: -2px
+   }

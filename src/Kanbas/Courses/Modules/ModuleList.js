@@ -4,6 +4,10 @@ import "./index.css"
 import { AiFillCheckCircle } from "react-icons/ai";
 import {FaEllipsisV} from"react-icons/fa"
 
+import {FaEllipsisVertical} from "react-icons/fa6"
+import {AiOutlinePlus} from "react-icons/ai"
+import {AiOutlineCheckCircle} from "react-icons/ai"
+
 
 
 function ModuleList(){
@@ -19,7 +23,8 @@ function ModuleList(){
                                 <button className="btn btn-light spaced">View Progress </button>
                                 <div className="dropdown dropped">
                                     <button class="btn btn-light dropdown-toggle"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        {/* <i class="fa fa-check-circle"  aria-hidden="true"></i> */}
+                                  <AiOutlineCheckCircle className='check-icon'/>
+
                                       Publish All
                                     </button>
                                     <ul className="dropdown-menu pos">
@@ -29,9 +34,12 @@ function ModuleList(){
                                     </ul>
                                   </div>
                                   <button className="btn btn-danger moduleBtn">
-                                    Module</button>
+                                    Module
+                                  <AiOutlinePlus className='plus-icon'/>
+                                    </button>
                                   <button className="btn btn-light spaced">
-                                    <i className="fa fa-ellipsis-v"  aria-hidden="true"></i>
+                                  <FaEllipsisVertical className='db-icon'/>
+
                                   </button>
 
                             </span>
