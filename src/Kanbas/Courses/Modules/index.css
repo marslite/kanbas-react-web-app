@@ -17,3 +17,42 @@
 }
 
 
+
+#container-edits {
+    border: solid black;
+
+    margin-top: -10px;
+    margin-left: -3px;
+}
+
+.inliner{
+    display: inline-flex;
+   }
+
+
+.cont-edit{
+    /* border: solid black; */
+    display: flex;
+    justify-content: end;
+   }
+
+
+   .dropdown {
+    margin-top: 4px;
+  }
+  
+  .spaced{
+    margin-right: 2px;
+   }
+
+   .copall{
+    margin-right: -17px;
+   }
+
+   .dropped{
+    margin-top: 5px;  
+   }
+
+   .moduleBtn{
+    margin-top: 5px;
+   }
