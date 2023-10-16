@@ -10,5 +10,21 @@
     color: red;
     margin-left: 2px;
     margin-right: 8px;
+    display: inline-block;
+    font-size: 35px;
     /* border: solid rebeccapurple; */
+}
+
+.styled{
+     display: inline-block;
+     margin-top: 3px;
+     font-size: 20px;
+
+}
+
+.home_s{
+
+        margin-top: 47px;
+
+      
 }
