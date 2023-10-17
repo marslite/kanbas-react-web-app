@@ -48,7 +48,7 @@ function ModuleList(){
 
                     </div>
 
-                    <hr style={{width: "1325px", textAlign: "left", marginLeft:"-220px", marginTop:"3px"}}/>
+                    <hr style={{width: "1000px", textAlign: "left", marginLeft:"-220px", marginTop:"3px"}}/>
 
 
 
