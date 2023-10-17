@@ -1,0 +1,35 @@
+.cont-edit{
+    display: flex;
+    justify-content: end;
+   }
+
+
+   .inliner{
+    display: inline-flex;
+   }
+
+
+
+
+   .assid{
+    height: 50px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-top-left-radius: 6px !important;
+    border-bottom-left-radius: 2px !important;
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 2px !important;
+   }
+
+
+   .rou{
+    border-radius: 26px !important;
+    margin-top: 7px;
+   }
+
+   .sp2{
+    margin-right: 54px;
+   }
+
+   .double_Ellipsis{
+    margin-left: -16px;
+   }
