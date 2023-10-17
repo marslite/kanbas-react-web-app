@@ -7,6 +7,7 @@ import Modules from "./Modules";
 import { Breadcrumb } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import Home from "./Home";
+import Assignments from "./Assignments";
 
 
 function Courses(){
@@ -44,7 +45,7 @@ function Courses(){
                         <Route path="/" element={<Navigate  to="Home" />} />
                         <Route path="Home" element={<Home/> } />
                         <Route path="Modules" element={<Modules/>} />
-                        <Route path="Assignments" element={<h1 className="home_s">Assignments</h1>} />
+                        <Route path="Assignments" element={<Assignments/>} />
                         <Route  path="Assignments/:assignmentId" element={<h1 className="home_s">Assignments Editor</h1>}/>
                         <Route path="Grades" element={<h1 className="home_s">Grades</h1>} />
                     </Routes>
