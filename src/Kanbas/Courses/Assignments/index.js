@@ -5,6 +5,7 @@ import {AiOutlinePlus} from "react-icons/ai"
 import {AiOutlineCheckCircle} from "react-icons/ai"
 import {MdArrowDropDown} from "react-icons/md"
 import {BsPlus} from "react-icons/bs"
+import {AiFillCheckCircle} from "react-icons/ai"
 
 
 import "./index.css"
@@ -74,7 +75,20 @@ function Assignments(){
             <a key={assignment._id} href={`#/kanbas/courses/${courseId}/${assignment._id}`}
             className="list-group-item"
             >
-                {assignment.title}</a>
+
+                <FaEllipsisVertical className='db-icon mvIcon'/>
+
+
+                {assignment.title}
+                <div className="float-end">
+                <AiFillCheckCircle className='db-icon'/>
+                <FaEllipsisVertical className='db-icon'/>
+
+
+                </div>
+
+                
+                </a>
                     ))}
                 </div>
             </div>
