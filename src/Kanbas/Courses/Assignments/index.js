@@ -62,7 +62,7 @@ function Assignments(){
             <FaEllipsisVertical className='db-icon double_Ellipsis'/>
             <MdArrowDropDown className='db-icon'/>
 
-                    Assignments
+                    ASSIGNMENTS
                     <div className="float-end">
                     <button className="btn btn-light rou" >40% of Total</button>
             <BsPlus className='db-icon'/>
