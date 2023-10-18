@@ -1,3 +1,34 @@
 .bodySpace{
     margin-top: 47px;
 }
+
+.cot{
+    margin-left: 620px;
+}
+
+.container-small{
+    width: 50rem;
+}
+
+.green-check{
+    color: green;
+    margin-top: -2px;
+}
+
+.color_text{
+    color: green;
+}
+
+.nw-d {
+    width: 645px;
+   }
+
+   .one-grid{
+    clear: both;
+   }
+
+   .wd-grid-col-half-page{
+    width: 50%;
+    float: left;
+ }
+
