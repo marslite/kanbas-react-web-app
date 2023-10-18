@@ -25,42 +25,47 @@ function Home(){
                 </div>
                 <div className="col-md-3">
                 <h3 className="home_s">Status</h3>
-                <button className="btn btn-light btn">
+                <button className="btn btn-light btn btn-un-pb">
                     Unpublish
                 </button>
-                <button className="btn btn-light btn-pbs" style={{"background-color": "green"}}>
-                                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <button className="btn btn-light btn-pbs btn-un-pb" style={{"background-color": "green"}}>
+                                    {/* <i class="fa fa-check-circle" aria-hidden="true"></i> */}
                                     Published
                                 </button><br/><br/>
                                 <span className="spaced_tabs">
-                                <button className="btn btn-light btn-width">
-                                <TbFileImport className=""/>
+                                <button className="btn btn-light btn-width flx-add">
+                                    {/* <span className="float-right"> */}
+                                <TbFileImport className="icon_pos"/>
+                                    {/* </span> */}
                                         Import Exisisting Content
                                     </button><br/>
-                                    <button className="btn btn-light btn-width">
-                                <BiSolidFileImport className=""/>
+                                    <button className="btn btn-light btn-width flx-add">
+                                        {/* <span className="float-right"> */}
+                                <BiSolidFileImport className="icon_pos"/>
                                         Import from Commons
+
+                                        {/* </span> */}
                                     </button><br/>
-                                    <button className="btn btn-light btn-width">
-                                <IoHelpBuoy className=""/>
+                                    <button className="btn btn-light btn-width flx-add">
+                                <IoHelpBuoy className="icon_pos"/>
                                         Choose Home Page
                                     </button><br/>
-                                    <button className="btn btn-light btn-width">
-                                <BsClipboardData className=""/>
+                                    <button className="btn btn-light btn-width flx-add">
+                                <BsClipboardData className="icon_pos"/>
                                         View Course Stream
                                     </button><br/>
-                                    <button className="btn btn-light btn-width">
-                                <TfiAnnouncement className=""/>
+                                    <button className="btn btn-light btn-width flx-add">
+                                <TfiAnnouncement className="icon_pos"/>
                                         New Announcement
                                     </button><br/>
-                                    <button className="btn btn-light btn-width">
-                                    <BsClipboardData className=""/>
+                                    <button className="btn btn-light btn-width flx-add">
+                                    <BsClipboardData className="icon_pos"/>
 
                                         New Analytics
                                         </button><br/>
-                                    <button className="btn btn-light btn-width" style={{"display": "inline"}}>
+                                    <button className="btn btn-light btn-width flx-add" style={{"display": "inline"}}>
 
-                                    <AiOutlineBell className=""/>
+                                    <AiOutlineBell className="icon_pos"/>
                                         View Course Notifications
                                         </button><br/>
 

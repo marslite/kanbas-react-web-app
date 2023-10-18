@@ -1,3 +1,21 @@
 .btn-width{
     width: 15rem;  
 }
+
+.btn-un-pb{
+    width: 7.5rem;
+}
+
+.flx-add{
+    display: flex !important;
+    justify-content: flex-start !important;
+    margin-top: -23px;
+    border: rgb(145, 145, 145) !important;
+    border-radius: 10px !important;
+}
+
+.icon_pos{
+    margin-right: 2px;
+    margin-top: 3px;
+
+}
