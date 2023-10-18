@@ -72,7 +72,7 @@ function Assignments(){
 
             <div className="list-group">
             {courseAssingments.map((assignment) => (
-            <a key={assignment._id} href={`#/kanbas/courses/${courseId}/${assignment._id}`}
+            <a key={assignment._id} href={`#/kanbas/courses/${courseId}/Assignments/${assignment._id}`}
             className="list-group-item"
             >
 
