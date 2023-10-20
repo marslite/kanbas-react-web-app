@@ -26,13 +26,22 @@ function Courses(){
             <div className="styled">
             <AiOutlineMenu className='courses-icon'/>
 
-            <Breadcrumb className="styled">
+            {/* <Breadcrumb className="styled">
             <ol className="breadcrumb " id="home_url">
                 <li className="breadcrumb-item spacing_nav "><a href="#">{course.name}</a></li>
                 <li className="breadcrumb-item active spacing_nav" aria-current="page">{path[4]}</li>
                 </ol>
 
-            </Breadcrumb>
+            </Breadcrumb> */}
+
+            <nav style={{"--bs-breadcrumb-divider": "'>'"}} aria-label="breadcrumb" className="styled">
+              <ol className="breadcrumb">
+                <li className="breadcrumb-item"><a href="#">{course.name}</a></li>
+                <li className="breadcrumb-item active" aria-current="page">{path[4]}</li>
+              </ol>
+            </nav>
+
+
 
 
 
