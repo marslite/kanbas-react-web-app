@@ -1,5 +1,12 @@
 import { useParams } from "react-router-dom";
 import db from "../../Kanbas/Database";
+import "../Grades/index.css"
+import {MdArrowDropDown} from "react-icons/md"
+import {AiFillSetting} from "react-icons/ai"
+import {FaFileExport} from "react-icons/fa"
+import {BiSolidFileImport} from "react-icons/bi"
+
+
 
 
 function Grades(){
@@ -18,9 +25,21 @@ function Grades(){
                 </span> */}
 
                 <div className="float-end">
-                <button className="btn btn-light"> Import </button>
-                <button className="btn btn-light"> Import </button>
-                <button className="btn btn-light"> Import </button>
+                <button className="btn btn-light space_btns"> 
+                <FaFileExport className='plus-icon '/>
+
+                Import 
+                </button>
+                <button className="btn btn-light space_btns"> 
+                <BiSolidFileImport className='plus-icon space'/>
+                Export
+                <MdArrowDropDown className='plus-icon'/>
+
+                 </button>
+                <button className="btn btn-light space_btns"> 
+
+                <AiFillSetting className='plus-icon'/>
+                 </button>
                 </div>
 
 
