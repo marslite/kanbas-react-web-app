@@ -11,7 +11,7 @@ function Add(){
             {/* {a} + {a} = { parseInt(a) + parseInt(a)}<br/>  */}
             {/* {b} + {b} = { parseInt(b) + parseInt(b)}  */}
             <h6>Succesfully parsed /a3/add/{a}/{b}</h6>
-            {/* <button>{parseInt(a) + parseInt(b)}</button> */}
+
 
         </div>
     );
