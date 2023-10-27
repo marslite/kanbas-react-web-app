@@ -12,10 +12,7 @@ function Test(){
     console.log(w);
     return(
         <div>
-
             <h3>Prepping for the midterm</h3>
-
-
         </div>
     );
 
