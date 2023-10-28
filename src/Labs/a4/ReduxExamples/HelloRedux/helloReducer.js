@@ -1,7 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
+// I created txt for testing purposes 
 const initialState = {
-    message: "Hello World eeh",
-    txt: "hello 2"
+    message: "Hello World",
+    txt: "hello 2",
 };
 
 

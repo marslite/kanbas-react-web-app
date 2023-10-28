@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 
 function HelloRedux(){
     const {message, txt} = useSelector((state) => state.helloReducer);
+
     return(
         <div>
             <h1>Hello Redux</h1>
