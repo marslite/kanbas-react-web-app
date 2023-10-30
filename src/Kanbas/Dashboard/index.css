@@ -22,3 +22,15 @@
     align-self: center;
     color: black;
 }
+
+.mv-on{
+    margin-left: 8px;
+    border: solid gray;
+    width: 24rem;
+}
+
+.btn-mv{
+    margin-left: 12px;
+    margin-right: 9px;
+
+}
