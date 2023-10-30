@@ -1,16 +1,23 @@
+import React from "react";
+import { useDispatch } from "react-redux";
+import { deleteTodo, setTodo } from "./todosReducer";
 
-function TodoItem({
+function TodoItem(
+    {
     todo, 
-    deleteTodo,
-    setTodo
-}){
+    // deleteTodo,
+    // setTodo
+    }) {
+        const dispatch = useDispatch();
     return(
         <li key={todo.id} className="list-group-item">
-            <button className="btn btn-secondary" onClick={() => deleteTodo(todo.id)}>Delete</button>
-            <button className="btn btn-secondary" onClick={() => setTodo(todo)}>Edit</button>
+            <button className="btn btn-secondary" onClick={() => dispatch(deleteTodo(todo.id))}>Delete</button>
+            <button className="btn btn-secondary" onClick={() => dispatch(setTodo(todo))}>Edit</button>
+
             {todo.title}
         </li>
     )
+
 }
 
 
