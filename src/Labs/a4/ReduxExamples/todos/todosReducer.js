@@ -11,7 +11,7 @@ const todosSlice = createSlice({
     name: "todos",
     initialState,
     reducers:{
-        
+
         addTodo: (state, action) => {
             const newTodos = [
                 ...state.todos,
