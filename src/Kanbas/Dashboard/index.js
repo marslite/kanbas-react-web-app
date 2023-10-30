@@ -15,6 +15,15 @@ function Dashboard(){
     // const courses = db.courses;
     const  [courses, setCourses] = useState(db.courses);
 
+    const [course, setCourse] =  useState({
+        name: "New Course", number: "New Number",
+        startDate: "2023-09-10", endDate: "2023-12-15",
+    });
+
+    const addNewCourse = () => {
+        setCourses([...courses, {...course, _id: new Date().getTime()} ]);
+    };
+
     return(
         <div>
 
@@ -25,9 +34,18 @@ function Dashboard(){
             <hr style={{width: "900px", textAlign: "left", marginLeft:"0px"}}/>
 
             <div className="mv-on">
+                <h5>Course</h5>
+                <input value={course.name} className="form-control"  
+                onChange={(e) => setCourse({...course, name: e.target.value})}/>
+                <input value={course.number} className="form-control" 
+                onChange={(e) => setCourse({...course, number: e.target.value})}/>
+                <input value={course.startDate} className="form-control" type="date"
+                onChange={(e) => setCourse({...course, startDate: e.target.value})} />
+                <input value={course.endDate} className="form-control" type="date"
+                 onChange={(e) => setCourse({...course, endDate: e.target.value})}/>
             <li className="list-group-item">
-                <input  value="New Course"/>
-                <button className="btn btn-secondary btn-mv">Add</button>
+                {/* <input  /> */}
+                <button className="btn btn-secondary btn-mv" onClick={addNewCourse}>Add</button>
                 <button className="btn btn-secondary">Edit</button>
             </li>
             </div>
@@ -36,6 +54,7 @@ function Dashboard(){
                 <div className="row spacing">
 
                  {courses.map((course) => (
+
                 <div className="col white_spacing_up">
                 <div className="card" style={{width: '270px'}}>
                     <img className="card-img-top" src={courseImage}  alt="Card image cap"/>
@@ -54,7 +73,11 @@ function Dashboard(){
                     </div>
                 </div>
             </div>
+            // <Link key={course._id} to={`/kanbas/courses/${course._id}`} className="list-group item"> {course.name}</Link>
+
                 ))} 
+
+
                 </div>
             </div>
         </div>
