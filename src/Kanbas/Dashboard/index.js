@@ -24,6 +24,23 @@ function Dashboard(){
         setCourses([...courses, {...course, _id: new Date().getTime()} ]);
     };
 
+    const deleteCourse = (courseId) => {
+        setCourses(courses.filter((course) => course._id !== courseId ));
+    }
+
+
+    const updateCourse = () => {
+        setCourses(
+            courses.map((c) => {
+                if (c._id === course._id ) {
+                    return course;
+                }else{
+                    return c;
+                }
+            })
+        )
+    };
+
     return(
         <div>
 
@@ -46,7 +63,8 @@ function Dashboard(){
             <li className="list-group-item">
                 {/* <input  /> */}
                 <button className="btn btn-secondary btn-mv" onClick={addNewCourse}>Add</button>
-                <button className="btn btn-secondary">Edit</button>
+                <button className="btn btn-secondary" onClick={updateCourse}>Edit</button>
+
             </li>
             </div>
 
@@ -57,19 +75,32 @@ function Dashboard(){
 
                 <div className="col white_spacing_up">
                 <div className="card" style={{width: '270px'}}>
+
+                {/* <button className="btn btn-danger btn-mv btn-dlt" onClick={(event) => {
+                    event.preventDefault(); deleteCourse(course._id);
+                }}>Delete</button> */}
+                
+
                     <img className="card-img-top" src={courseImage}  alt="Card image cap"/>
                     <div className="card-body"> 
                     <Link key={course._id} to={`/kanbas/courses/${course._id}`} className="list-group-item"><h5 className="card-title"> {course.name}</h5></Link>
-
-                    <h6> {course.number} </h6>
-                    {/* <Link>{course.name}</Link> */}
+                    <h6> {course.number} </h6>                    
                     <p className="card-text"> {course.startDate} ~ {course.endDate}.</p>
+
                     {/* <i className="fa fa-book" aria-hidden="true"></i> */}
                     {/* <RiCreativeCommonsFill className='wd-icon'/> */}
                     <PiNotebookDuotone className='db-icon'/>
                     <div className="float-end">
                     ID: {course._id}
                     </div>
+                    </div>
+                    <div className="d-flx"> 
+
+                    <button className="btn btn-secondary edit-mv" onClick={(event) => {event.preventDefault(); setCourse(course); console.log(event, "here")}}>Edit</button>
+                    <button className="btn btn-danger btn-mv btn-dlt" onClick={(event) => {
+                    event.preventDefault(); deleteCourse(course._id);
+                }}>Delete</button>
+
                     </div>
                 </div>
             </div>

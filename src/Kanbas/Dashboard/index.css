@@ -34,3 +34,17 @@
     margin-right: 9px;
 
 }
+
+.btn-dlt{
+    width: 77px;
+    margin-right: -1px;
+}
+
+.d-flx{
+    display: flex;
+    justify-content: end;
+}
+
+.edit-mv{
+    margin-right: -11px;
+}
