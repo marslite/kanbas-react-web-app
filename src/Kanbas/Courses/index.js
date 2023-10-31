@@ -13,10 +13,10 @@ import AssignmentEditor from "./Assignments/AssignmentsEditor";
 import Grades from "../../Kanbas/Grades"
 
 
-function Courses(){
+function Courses({courses}){
     const {courseId} = useParams();
     const {pathname} = useLocation();
-    const course = db.courses.find((course) => course._id === courseId);
+    const course = courses.find((course) => course._id === courseId);
     const path = pathname.split('/');
     console.log(path[4], "here");
 
