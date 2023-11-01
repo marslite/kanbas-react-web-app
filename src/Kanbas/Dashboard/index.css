@@ -48,3 +48,28 @@
 .edit-mv{
     margin-right: -11px;
 }
+
+.dsp-ln{
+    display: inline !important;
+}
+
+.dsp-bl{
+    display: block !important;
+}
+
+.ed_ip{
+    width: 183px;
+
+}
+
+.a4_br{
+    border: solid gray;
+    width: 20rem;
+    border-radius: 2%;
+}
+
+.btn-cst{
+    margin-left: 56px;
+    width: 75px;
+    height: 44px;
+}
