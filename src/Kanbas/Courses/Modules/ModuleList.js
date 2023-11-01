@@ -29,6 +29,14 @@ function ModuleList(){
         ])
     }
 
+    const deleteModule = (moduleId) => {
+        setModules(modules.filter(
+            //deletes the module when the condition is false
+            //and generates a net set of Modules
+            (module) => module._id !== moduleId
+        ))
+    }
+
 
     return(
         <div className="container test">
@@ -83,6 +91,10 @@ function ModuleList(){
                             modules.filter((module) => module.course === courseId)
                             .map((module,index) => (
                                 <li key={index} className="list-group-item list-group-item-secondary spac">
+                                    <div className="flt_edt">
+                                    <button className="dlt-edit btn btn-danger" onClick={() => deleteModule(module._id)}>Delete</button>
+
+                                    </div>
                                     <h3>{module.name}
                                     <div className="float-end">
                                     <AiFillCheckCircle className='icon-edit'/>
