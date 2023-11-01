@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import "./index.css"
@@ -9,45 +9,55 @@ import {FaEllipsisVertical} from "react-icons/fa6"
 import {AiOutlinePlus} from "react-icons/ai"
 import {AiOutlineCheckCircle} from "react-icons/ai"
 
+import { useSelector, useDispatch } from "react-redux";
+import{addModule, deleteModule, updateModule, setModule} from "./modulesReducer"
+
+
 
 
 function ModuleList(){
     const {courseId } = useParams();
     // const modules = db.modules;
+    const modules =  useSelector( (state) => state.modulesReducer.modules);
+    const module =  useSelector( (state) => state.modulesReducer.module);
+    const dispatch = useDispatch();
 
-    const [modules, setModules] = useState(db.modules);
-    const [module, setModule] = useState({
-        name: "New Module",
-        description: "New Description",
-        course: courseId,
-    });
+    // const [modules, setModules] = useState(db.modules);
+    // const [module, setModule] = useState({
+    //     name: "New Module",
+    //     description: "New Description",
+    //     course: courseId,
+    // });
 
-    const addModule = (module) => {
-        setModules([
-            {...module, _id: new Date().getTime().toString() },
-            ...modules,
-        ])
-    }
+    //Since we are using modulesReducer we import all these functionalities and we call with dispatch.
+    // Because of that we can comment all of the local functions here out.
 
-    const deleteModule = (moduleId) => {
-        setModules(modules.filter(
-            //deletes the module when the condition is false
-            //and generates a net set of Modules
-            (module) => module._id !== moduleId
-        ))
-    }
+    // const addModule = (module) => {
+    //     setModules([
+    //         {...module, _id: new Date().getTime().toString() },
+    //         ...modules,
+    //     ])
+    // }
 
-    const updateModule = () => {
-        setModules(
-            modules.map( (m) => {
-                if (m._id === module._id){
-                    return module;
-                }else{
-                    return m
-                }
-            })
-        )
-    }
+    // const deleteModule = (moduleId) => {
+    //     setModules(modules.filter(
+    //         //deletes the module when the condition is false
+    //         //and generates a net set of Modules
+    //         (module) => module._id !== moduleId
+    //     ))
+    // }
+
+    // const updateModule = () => {
+    //     setModules(
+    //         modules.map( (m) => {
+    //             if (m._id === module._id){
+    //                 return module;
+    //             }else{
+    //                 return m
+    //             }
+    //         })
+    //     )
+    // }
 
 
     return(
@@ -85,10 +95,10 @@ function ModuleList(){
 
                     <div className="float-left  a4_br" >
                         {/* <li className="list-group-item"> */}
-                            <input className="list-group-item dsp-ln ed_ip"  value={module.name} onChange={(e) => setModule({...module, name: e.target.value})} />
-                            <button className="dsp-ln btn btn-secondary btn-cst" onClick={() => {addModule(module)}}>Add</button>
-                            <button className="dsp-ln btn btn-secondary btn-dts" onClick={updateModule}>Update</button>
-                            <textarea className="dsp-bl" value={module.description} onChange={(e) => setModule({...module, description: e.target.value})} />
+                            <input className="list-group-item dsp-ln ed_ip"  value={module.name} onChange={(e) => dispatch(setModule({...module, name: e.target.value}))} />
+                            <button className="dsp-ln btn btn-secondary btn-cst" onClick={() => dispatch(addModule({...module, course: courseId})) }>Add</button>
+                            <button className="dsp-ln btn btn-secondary btn-dts" onClick={() => dispatch(updateModule)}>Update</button>
+                            <textarea className="dsp-bl" value={module.description} onChange={(e) => dispatch(setModule({...module, description: e.target.value}))} />
                         {/* </li> */}
                     </div>
 
@@ -105,8 +115,8 @@ function ModuleList(){
                             .map((module,index) => (
                                 <li key={index} className="list-group-item list-group-item-secondary spac">
                                     <div className="flt_edt dsp-ln">
-                                    <button className="dlt-edit btn btn-secondary dsp-ln btn-hg" onClick={() => setModule(module)}>Update</button>
-                                    <button className="dlt-edit btn btn-danger dsp-ln btn-hg" onClick={() => deleteModule(module._id)}>Delete</button>
+                                    <button className="dlt-edit btn btn-secondary dsp-ln btn-hg" onClick={() => dispatch(setModule(module))}>Update</button>
+                                    <button className="dlt-edit btn btn-danger dsp-ln btn-hg" onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
 
                                     </div>
                                     <h3>{module.name}
