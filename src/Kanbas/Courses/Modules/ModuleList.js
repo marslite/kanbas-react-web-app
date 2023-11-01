@@ -97,7 +97,7 @@ function ModuleList(){
                         {/* <li className="list-group-item"> */}
                             <input className="list-group-item dsp-ln ed_ip"  value={module.name} onChange={(e) => dispatch(setModule({...module, name: e.target.value}))} />
                             <button className="dsp-ln btn btn-secondary btn-cst" onClick={() => dispatch(addModule({...module, course: courseId})) }>Add</button>
-                            <button className="dsp-ln btn btn-secondary btn-dts" onClick={() => dispatch(updateModule)}>Update</button>
+                            <button className="dsp-ln btn btn-secondary btn-dts" onClick={() => dispatch(updateModule(module))}>Update</button>
                             <textarea className="dsp-bl" value={module.description} onChange={(e) => dispatch(setModule({...module, description: e.target.value}))} />
                         {/* </li> */}
                     </div>

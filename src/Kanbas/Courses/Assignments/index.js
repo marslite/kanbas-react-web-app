@@ -1,4 +1,5 @@
-import {Link, useParams} from "react-router-dom";
+import React from "react";
+import { useParams} from "react-router-dom";
 import db from "../../Database";
 import {FaEllipsisVertical} from "react-icons/fa6"
 import {AiOutlinePlus} from "react-icons/ai"
@@ -9,11 +10,18 @@ import {AiFillCheckCircle} from "react-icons/ai"
 
 
 import "./index.css"
+import { useSelector, useDispatch } from "react-redux";
+import { addAssignment, deleteAssignment, updateAssignment,setAssignment } from "./assignmentsReducer";
 
 
 function Assignments(){
     const {courseId} = useParams();
-    const assignments = db.assignments;
+
+    // const assignments = db.assignments;
+    const assignments = useSelector( (state) => state.assignmentsReducer.assignments);
+    const assignment = useSelector( (state) => state.assignmentsReducer.assignment);
+    const dispatch = useDispatch();
+
     const courseAssingments = assignments.filter(
     (assignment) => assignment.course === courseId );
 
@@ -30,7 +38,7 @@ function Assignments(){
                                     Group 
                                 </button>
 
-                                  <button className="btn btn-danger moduleBtn">
+                                  <button className="btn btn-danger moduleBtn" >
                                   <AiOutlinePlus className='plus-icon'/>
                                      Assignment
                                     </button>
