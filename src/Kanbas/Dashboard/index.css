@@ -71,7 +71,7 @@
 .btn-cst{
     margin-left: 56px;
     width: 75px;
-    height: 44px;
+    height: 33px;
 }
 
 .dlt_edit{
@@ -79,5 +79,17 @@
 }
 
 .flt_edt{
-    margin-left: 50rem;
+    margin-left: 700px;
+    /* border: solid gray; */
+}
+
+.btn-hg{
+    height: 33px;
+}
+
+.btn-dts{
+    margin-left: 240px;
+    margin-top: 4px;  
+    width: 75px;
+    height: 33px;
 }

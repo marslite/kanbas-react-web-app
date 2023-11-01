@@ -37,6 +37,18 @@ function ModuleList(){
         ))
     }
 
+    const updateModule = () => {
+        setModules(
+            modules.map( (m) => {
+                if (m._id === module._id){
+                    return module;
+                }else{
+                    return m
+                }
+            })
+        )
+    }
+
 
     return(
         <div className="container test">
@@ -75,6 +87,7 @@ function ModuleList(){
                         {/* <li className="list-group-item"> */}
                             <input className="list-group-item dsp-ln ed_ip"  value={module.name} onChange={(e) => setModule({...module, name: e.target.value})} />
                             <button className="dsp-ln btn btn-secondary btn-cst" onClick={() => {addModule(module)}}>Add</button>
+                            <button className="dsp-ln btn btn-secondary btn-dts" onClick={updateModule}>Update</button>
                             <textarea className="dsp-bl" value={module.description} onChange={(e) => setModule({...module, description: e.target.value})} />
                         {/* </li> */}
                     </div>
@@ -91,8 +104,9 @@ function ModuleList(){
                             modules.filter((module) => module.course === courseId)
                             .map((module,index) => (
                                 <li key={index} className="list-group-item list-group-item-secondary spac">
-                                    <div className="flt_edt">
-                                    <button className="dlt-edit btn btn-danger" onClick={() => deleteModule(module._id)}>Delete</button>
+                                    <div className="flt_edt dsp-ln">
+                                    <button className="dlt-edit btn btn-secondary dsp-ln btn-hg" onClick={() => setModule(module)}>Update</button>
+                                    <button className="dlt-edit btn btn-danger dsp-ln btn-hg" onClick={() => deleteModule(module._id)}>Delete</button>
 
                                     </div>
                                     <h3>{module.name}
