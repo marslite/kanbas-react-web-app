@@ -1,9 +1,13 @@
 
 import { useNavigate,useParams, Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { addAssignment,setAssignment,deleteAssignment,updateAssignment } from "../assignmentsReducer";
 import db from "../../../Database";
 import "../AssignmentsEditor/index.css"
 import {FaEllipsisVertical} from "react-icons/fa6"
 import { AiFillCheckCircle } from "react-icons/ai";
+import { MdNavigateBefore } from "react-icons/md";
+
 
 
 
@@ -13,12 +17,22 @@ function AssignmentEditor(){
         (assignment)=> assignment._id === assignmentId
     );
 
+    console.log(assignmentId, "check here")
+
     const {courseId} = useParams();
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     const handleSave = () => {
+      if(assignmentId === 'new_id'){
+        console.log('testing the add function')
+        dispatch(addAssignment({...assignment, _id: new Date().getTime().toString()}))
+      }else{
         console.log("TBD for later assignments");
         navigate(`/kanbas/courses/${courseId}/Assignments`);
-    };
+        }
+        navigate(`/kanbas/courses/${assignment.course}/assignments`)
+
+      };
 
 
     return(

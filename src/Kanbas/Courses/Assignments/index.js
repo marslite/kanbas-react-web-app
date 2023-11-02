@@ -16,6 +16,7 @@ import { addAssignment, deleteAssignment, updateAssignment,setAssignment } from 
 
 function Assignments(){
     const {courseId} = useParams();
+    console.log()
 
     // const assignments = db.assignments;
     const assignments = useSelector( (state) => state.assignmentsReducer.assignments);
@@ -24,6 +25,18 @@ function Assignments(){
 
     const courseAssingments = assignments.filter(
     (assignment) => assignment.course === courseId );
+
+    // const handleAddAss = () => {
+    //     const newAss = {
+    //         title: "New Title",
+    //         course: courseId,
+    //         _id: new Date().getTime().toString()
+    //     };
+    //     const updatedAss = [...assignments, newAss];
+
+    //     dispatch(addAssignment(updatedAss));
+    // }
+
 
     return(
         <div style={{marginTop: '47px'}} className="container ">
@@ -37,7 +50,8 @@ function Assignments(){
                                 <AiOutlinePlus className='plus-icon'/>
                                     Group 
                                 </button>
-                                <Link to={`/kanbas/courses/${courseId}/Assignment/new_id`}>
+                                {/* <Link to={`/kanbas/courses/${courseId}/Assignment/new_id`}> */}
+                                <Link to={`/kanbas/courses/${courseId}/Assignment/new`} onClick={()=> dispatch(setAssignment({...assignment, course: courseId}))}>
                                 <button className="btn btn-danger moduleBtn" >
                                   <AiOutlinePlus className='plus-icon'/>
                                      Assignment
