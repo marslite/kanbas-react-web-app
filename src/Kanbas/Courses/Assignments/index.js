@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams} from "react-router-dom";
+import { useParams, Link} from "react-router-dom";
 import db from "../../Database";
 import {FaEllipsisVertical} from "react-icons/fa6"
 import {AiOutlinePlus} from "react-icons/ai"
@@ -37,11 +37,13 @@ function Assignments(){
                                 <AiOutlinePlus className='plus-icon'/>
                                     Group 
                                 </button>
-
-                                  <button className="btn btn-danger moduleBtn" >
+                                <Link to={`/kanbas/courses/${courseId}/Assignment/new_id`}>
+                                <button className="btn btn-danger moduleBtn" >
                                   <AiOutlinePlus className='plus-icon'/>
                                      Assignment
                                     </button>
+                                </Link>
+
                                   <button className="btn btn-light spaced">
                                   <FaEllipsisVertical className='db-icon'/>
 
