@@ -28,14 +28,16 @@ function Test(){
     // const wer = [5,...ewq,15]
     // const qwe = wer.find(bnm => bnm === 42);
 
-    const qwe = [5, 4,3,2,1];
-    const wer = qwe.map(asd => asd * asd);
+    // const qwe = [5, 4,3,2,1];
+    // const wer = qwe.map(asd => asd * asd);
 
+    // const ewq = [42,33,24]
+    // const wer = [5,...ewq,15]
+    // const qwe = wer.find(bnm => bnm === 42);
 
-
-    
-
-
+    const ewq = {asd:123}
+    // const qwe = {...ewq, bnm: 345}
+    // const wer = {bnm: 234,  ...qwe, cvb: 456}
 
 
 
@@ -46,7 +48,7 @@ function Test(){
         <div>
 
             <h3>Prepping for the midterm</h3>
-            <h3>{wer}</h3>
+            {/* <h3>{wer}</h3> */}
             {/* <h3>{sdf}</h3> */}
             {/* <h3>{qwe}</h3> */}
             {/* <h1 className="rew" id="tre">I'm white on blue</h1> */}

@@ -25,6 +25,18 @@ function Assignments(){
 
     const courseAssingments = assignments.filter(
     (assignment) => assignment.course === courseId );
+    // assignments = updateAssignment(newAss);
+    
+    const hadleCreate = () => {
+        const newAss = setAssignment({...assignment, course: courseId});
+        const updateAssignment = [...assignments, newAss];
+        dispatch(addAssignment(updateAssignment));
+
+    }
+    
+
+
+
 
     // const handleAddAss = () => {
     //     const newAss = {
@@ -51,8 +63,10 @@ function Assignments(){
                                     Group 
                                 </button>
                                 {/* <Link to={`/kanbas/courses/${courseId}/Assignment/new_id`}> */}
-                                <Link to={`/kanbas/courses/${courseId}/Assignment/new`} onClick={()=> dispatch(setAssignment({...assignment, course: courseId}))}>
+                                <Link to={`/kanbas/courses/${courseId}/Assignments/AssignmentsEditor/index.js?isNewAssignment=true`} >
+
                                 <button className="btn btn-danger moduleBtn" >
+
                                   <AiOutlinePlus className='plus-icon'/>
                                      Assignment
                                     </button>
@@ -96,6 +110,7 @@ function Assignments(){
 
             <div className="list-group">
             {courseAssingments.map((assignment) => (
+        //  <Link to={`/kanbas/courses/${courseId}/Assignment/new`} onClick={()=> dispatch(setAssignment({...assignment, course: courseId}))}></Link>
             <a key={assignment._id} href={`#/kanbas/courses/${courseId}/Assignments/${assignment._id}`}
             className="list-group-item"
             >

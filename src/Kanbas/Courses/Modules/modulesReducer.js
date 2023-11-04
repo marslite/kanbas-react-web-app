@@ -24,7 +24,7 @@ const moduleSlice = createSlice({
         updateModule: (state, action) => {
             state.modules = state.modules.map((module) => {
                 if (module._id === action.payload._id){
-                    return action.payload
+                    return action.payload 
                 }else{
                     return module;
                 }

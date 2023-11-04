@@ -1,5 +1,5 @@
 
-import { useNavigate,useParams, Link } from "react-router-dom";
+import { useNavigate,useParams, Link, useLocation } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addAssignment,setAssignment,deleteAssignment,updateAssignment } from "../assignmentsReducer";
 import db from "../../../Database";
@@ -16,6 +16,10 @@ function AssignmentEditor(){
     const assignment = db.assignments.find(
         (assignment)=> assignment._id === assignmentId
     );
+
+
+    const location = useLocation();
+    const isNewAssignment = new URLSearchParams(location.search).get("isNewAssignment") === "true"
 
     console.log(assignmentId, "check here")
 
