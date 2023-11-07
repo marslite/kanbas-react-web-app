@@ -9,6 +9,7 @@ import { useLocation } from "react-router-dom";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentsEditor";
+import AssEdit from "./Assignments/AssignmentsEditor/assedit";
 // import Grades from "./Grades";
 import Grades from "../../Kanbas/Grades"
 
@@ -59,6 +60,7 @@ function Courses({courses}){
                         <Route path="Modules" element={<Modules/>} />
                         <Route path="Assignments" element={<Assignments/>} />
                         <Route  path="Assignments/:assignmentId" element={<AssignmentEditor/>}/>
+                        <Route  path="Assignments/newid" element={<AssEdit/>}/>
                         <Route path="Grades" element={<Grades/>} />
                     </Routes>
 

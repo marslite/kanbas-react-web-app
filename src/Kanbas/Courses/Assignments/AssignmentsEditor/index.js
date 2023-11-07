@@ -29,13 +29,13 @@ function AssignmentEditor(){
     const dispatch = useDispatch();
     
     const handleSave = () => {
-      if(assignmentId === 'new_id'){
-        console.log('testing the add function')
-        dispatch(addAssignment({...assignment, _id: new Date().getTime().toString()}))
-      }else{
-        console.log("TBD for later assignments");
-        navigate(`/kanbas/courses/${courseId}/Assignments`);
-        }
+      // if(assignmentId === 'new_id'){
+      //   console.log('testing the add function')
+      //   dispatch(addAssignment(assignment))
+      // }else{
+      //   console.log("TBD for later assignments");
+      //   navigate(`/kanbas/courses/${courseId}/Assignments`);
+      //   }
         navigate(`/kanbas/courses/${assignment.course}/assignments`)
 
       };

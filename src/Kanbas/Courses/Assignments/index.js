@@ -63,7 +63,9 @@ function Assignments(){
                                     Group 
                                 </button>
                                 {/* <Link to={`/kanbas/courses/${courseId}/Assignment/new_id`}> */}
-                                <Link to={`/kanbas/courses/${courseId}/Assignments/AssignmentsEditor/index.js?isNewAssignment=true`} >
+                                <Link to={`/kanbas/courses/${courseId}/Assignments/newid`}>
+                               
+                                {/* <Link to={`/kanbas/courses/${courseId}/Assignments/AssignmentsEditor/index.js?isNewAssignment=true`} > */}
 
                                 <button className="btn btn-danger moduleBtn" >
 
