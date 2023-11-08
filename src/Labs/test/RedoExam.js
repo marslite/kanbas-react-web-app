@@ -18,8 +18,6 @@ function RedoExam(){
         <div>
             <h1>Hello</h1>
             <h2>Answer is : {wer}</h2>
-            {/* <h2>Answer is : {wer}</h2> */}
-            {/* <Har/> */}
 
             <Test/>
 

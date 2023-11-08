@@ -45,10 +45,15 @@ function WorkingWithArrays(){
 
             <h5>Extra Credit</h5>
             {/* <form onClick={}> */}
+            <h6>Completed:</h6>
             <label htmlFor="lol" >Completed: </label> 
             ${console.log(todo.completed, "Check here")}
             <input type="checkbox" value={todo.completed} id="lol" onChange={(e) => setTodo({...todo, completed: e.target.checked})}/>
             <a href={`${API}/${todo.id}/completed/${todo.completed}`}> Submit</a>
+
+            <h6>Description</h6>
+            <input value={todo.description} onChange={(e) => setTodo({...todo, description: e.target.value})} className="form-control mb-2" type="text" />
+            <a href={`${API}/${todo.id}/description/${encodeURIComponent(todo.description)}`} className="btn btn-primary me-2">Update Description to {todo.description}</a>
 
 
             {/* </form> */}
