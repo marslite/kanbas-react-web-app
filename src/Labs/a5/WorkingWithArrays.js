@@ -5,9 +5,11 @@ function WorkingWithArrays(){
 
     //Made this change otherwise ID or todo.id CANNOT be accessed
     const [todo, setTodo] = useState({
-        // id: 1,
-        // title: "Task 1",
-        // completed: false,
+        id: 1,
+        title: "NodeJS Assignment",
+        description: "Create a NodeJS server with ExpressJS",
+        due: "2021-09-09",
+        completed: false,
     });
 
     // const [todo,setTodo] = useState({})
@@ -28,6 +30,29 @@ function WorkingWithArrays(){
 
             <h4>Creating new Items in an Array</h4>
             <a href={`${API}/create`} className="btn btn-primary me-2">Create Todo</a>
+
+
+            <input value={todo.id} onChange={ (e) => setTodo({...todo, id: e.target.value})} className="form-control mb-2"  type="number"/>
+
+            <h3>Deleting from an Array</h3>
+            <a href={`${API}/${todo.id}/delete`} className="btn btn-danger me-2">Delete Todo with ID = {todo.id} </a>
+            
+            {/* <h4>Delin</h4> */}
+
+            <h3>Updating an Item in an Array</h3>
+            <input value={todo.title} onChange={(e)=> setTodo({...todo, title: e.target.value})} className="form-control mb-2" type="text"/>
+            <a href={`${API}/${todo.id}/title/${todo.title}`} className="btn btn-primary me-2">Update Title to {todo.title}</a>
+
+            <h5>Extra Credit</h5>
+            {/* <form onClick={}> */}
+            <label htmlFor="lol" >Completed: </label> 
+            ${console.log(todo.completed, "Check here")}
+            <input type="checkbox" value={todo.completed} id="lol" onChange={(e) => setTodo({...todo, completed: e.target.checked})}/>
+            <a href={`${API}/${todo.id}/completed/${todo.completed}`}> Submit</a>
+
+
+            {/* </form> */}
+
 
 
         </div>
