@@ -1,4 +1,5 @@
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 function WorkingWithArrays(){
     const API = "http://localhost:4000/a5/todos";
@@ -12,12 +13,41 @@ function WorkingWithArrays(){
         completed: false,
     });
 
-    // const [todo,setTodo] = useState({})
+    const [todos, setTodos] = useState([]);
+    const fetchTodos = async () => {
+        const response = await axios.get(API);
+        setTodos(response.data);
+    }
 
+    const removeTodo = async (todo) => {
+        const response = await axios.get(`${API}/${todo.id}/delete`);
+        setTodos(response.data);
+    }
+
+    const createTodo = async () => {
+        const response = await axios.get(`${API}/create`);
+        setTodos(response.data)
+    }
+
+    useEffect( () => {
+        fetchTodos();
+    }, []);
+
+            
+    // const [todo,setTodo] = useState({})
 
     return(
         <div>
             <h3>Working With Arrays</h3>
+            <ul className="list-group">
+                <button className="btn btn-primary mb-2 w-100" onClick={createTodo}>Create Todo</button>
+                {todos.map((todo)=> <li key={todo.id} className="list-group-item">
+                    <button onClick={() => removeTodo(todo)} className="btn btn-danger float-end"> Remove</button>
+                    {todo.title}
+                    </li>)}
+            </ul>
+
+
             <h4>Retrieving Arrays</h4>
             <a href={API} className="btn btn-primary me-2">Get Todos</a>
             <h4>Retrieving an Item from an Array by ID</h4>
@@ -44,7 +74,7 @@ function WorkingWithArrays(){
             <a href={`${API}/${todo.id}/title/${todo.title}`} className="btn btn-primary me-2">Update Title to {todo.title}</a>
 
             <h5>Extra Credit</h5>
-            {/* <form onClick={}> */}
+
             <h6>Completed:</h6>
             <label htmlFor="lol" >Completed: </label> 
             ${console.log(todo.completed, "Check here")}
@@ -56,7 +86,7 @@ function WorkingWithArrays(){
             <a href={`${API}/${todo.id}/description/${encodeURIComponent(todo.description)}`} className="btn btn-primary me-2">Update Description to {todo.description}</a>
 
 
-            {/* </form> */}
+
 
 
 
