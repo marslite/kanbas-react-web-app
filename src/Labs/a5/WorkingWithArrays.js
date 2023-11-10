@@ -29,6 +29,17 @@ function WorkingWithArrays(){
         setTodos(response.data);
     }
 
+    const deleteTodo = async (todo) => {
+        const response = await axios.delete(`${API}/${todo.id}`);
+        setTodos(todos.filter((t) => t.id !== todo.id ));
+    };
+
+    const updateTodo = async () => {
+        const response = await axios.put(`${API}/${todo.id}`, todo);
+        setTodos( todos.map((t) => (t.id === todo.id ? todo : t)))
+        setTodo({});
+    }
+
     const createTodo = async () => {
         const response = await axios.get(`${API}/create`);
         setTodos(response.data)
@@ -61,12 +72,13 @@ function WorkingWithArrays(){
                 <input onChange={(e) => setTodo({...todo, due: e.target.value })} value={todo.due} type="date" /><br/>
                 <label> <input onChange={(e)=> setTodo({...todo, completed: e.target.checked})} value={todo.completed} type="checkbox" /> Completed </label><br/>
                 <button onClick={postTodo} className="btn btn-danger"> Post Todo</button>
+                <button className="btn btn-warning" onClick={updateTodo}>Update Todo</button>
                 <button className="btn btn-primary mb-2 w-100" onClick={createTodo}>Create Todo</button>
                 <button onClick={updateTitle} className="btn btn-success mb-2 w-100"> Update Title</button>
             <ul className="list-group">
                 {todos.map((todo)=> <li key={todo.id} className="list-group-item">
                     <button onClick={() => fetchTodoById(todo.id)} className="btn btn-warning me-2 float-end">Edit</button>
-                    <button onClick={() => removeTodo(todo)} className="btn btn-danger float-end"> Remove</button>
+                    <button onClick={() => deleteTodo(todo)} className="btn btn-danger float-end"> Delete</button>
                     <input checked={todo.completed} type="checkbox" readOnly/>
                     {todo.title}
                     <p>{todo.description}</p>
