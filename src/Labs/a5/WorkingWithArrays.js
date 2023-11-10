@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 function WorkingWithArrays(){
     const API = "http://localhost:4000/a5/todos";
 
+    const [errorMessage, setErrorMessage] = useState(null);
+
     //Made this change otherwise ID or todo.id CANNOT be accessed
     const [todo, setTodo] = useState({
         id: 1,
@@ -30,14 +32,26 @@ function WorkingWithArrays(){
     }
 
     const deleteTodo = async (todo) => {
-        const response = await axios.delete(`${API}/${todo.id}`);
-        setTodos(todos.filter((t) => t.id !== todo.id ));
+        try {
+            const response = await axios.delete(`${API}/${todo.id}`);
+            setTodos(todos.filter((t) => t.id !== todo.id ));
+            
+        } catch (error) {
+            console.log(error);
+            setErrorMessage(error.response.data.message)            
+        }
     };
 
     const updateTodo = async () => {
-        const response = await axios.put(`${API}/${todo.id}`, todo);
-        setTodos( todos.map((t) => (t.id === todo.id ? todo : t)))
-        setTodo({});
+        try {
+            const response = await axios.put(`${API}/${todo.id}`, todo);
+            setTodos( todos.map((t) => (t.id === todo.id ? todo : t)))
+            setTodo({});
+        } catch (error) {
+            console.log(error);
+            setErrorMessage(error.response.data.message)
+            
+        }
     }
 
     const createTodo = async () => {
@@ -86,6 +100,9 @@ function WorkingWithArrays(){
                     </li>)}
             </ul>
 
+            {errorMessage && (
+                <div className="alert alert-danger mb-2 mt-2">  {errorMessage} </div>
+            )}
 
             <h4>Retrieving Arrays</h4>
             <a href={API} className="btn btn-primary me-2">Get Todos</a>
