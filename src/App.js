@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
-import Labs from "./Labs";
-import HelloWorld from './Labs/a3/HelloWorld';
-import Kanbas from './Kanbas';
+//Changed it from ./Labs to ->
+import Labs from "./Labs/index.js";
+import HelloWorld from './Labs/a3/HelloWorld.js';
+import Kanbas from './Kanbas/index.js';
 import { HashRouter } from 'react-router-dom';
 import { Routes, Route,  Navigate } from 'react-router';
 // import Add from './Labs/a3/Add';
-import PathParamters from './Labs/a3/PathParameters';
-import Redo from './Labs/test/RedoExam';
+import PathParamters from './Labs/a3/PathParameters.js';
+// import Redo from './Labs/test/RedoExam';
 
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
         {/* <Route path='/' element={<Navigate to="/Labs/"/>}/> */}
         <Route index element={ <Labs/>}/>
         {/* //Just for testing the midterm answers */}
-        <Route path='/redo' element={<Redo />}/>
+        {/* <Route path='/redo' element={<Redo />}/> */}
         <Route path='/hello' element={<HelloWorld/>}/>
         <Route path='/kanbas/*' element={<Kanbas/>}/>
         <Route path='/Labs/*' element={<Labs />}/>

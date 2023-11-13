@@ -8,7 +8,7 @@ import { FaHistory } from 'react-icons/fa';
 import { BsFillMusicPlayerFill } from 'react-icons/bs';
 import { RiCreativeCommonsFill } from 'react-icons/ri';
 import { BiSolidHelpCircle } from 'react-icons/bi'; 
-import {PiNotebookDuotone} from 'react-icons/bi';
+// import {PiNotebookDuotone} from 'react-icons/bi';
 import logo from '../KanbasNavigation/ic_logo.png'
 
 
