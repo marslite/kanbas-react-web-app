@@ -12,7 +12,7 @@ import {AiOutlineCheckCircle} from "react-icons/ai"
 import { useSelector, useDispatch } from "react-redux";
 import{addModule, deleteModule, updateModule, setModule, setModules} from "./modulesReducer"
 
-import { findModulesForCourse } from "./client";
+import { findModulesForCourse, createModule } from "./client";
 
 
 
@@ -26,6 +26,12 @@ function ModuleList(){
     const modules =  useSelector( (state) => state.modulesReducer.modules);
     const module =  useSelector( (state) => state.modulesReducer.module);
     const dispatch = useDispatch();
+
+    const handleAddModule = () => {
+        createModule(courseId, module).then( (module) => {dispatch(addModule(module))} )
+    }
+
+
 
     // const [modules, setModules] = useState(db.modules);
     // const [module, setModule] = useState({
@@ -101,7 +107,8 @@ function ModuleList(){
                     <div className="float-left  a4_br" >
                         {/* <li className="list-group-item"> */}
                             <input className="list-group-item dsp-ln ed_ip"  value={module.name} onChange={(e) => dispatch(setModule({...module, name: e.target.value}))} />
-                            <button className="dsp-ln btn btn-secondary btn-cst" onClick={() => dispatch(addModule({...module, course: courseId})) }>Add</button>
+                            {/* <button className="dsp-ln btn btn-secondary btn-cst" onClick={() => dispatch(addModule({...module, course: courseId})) }>Add</button> */}
+                            <button className="dsp-ln btn btn-secondary btn-cst" onClick={handleAddModule }>Add</button>
                             <button className="dsp-ln btn btn-secondary btn-dts" onClick={() => dispatch(updateModule(module))}>Update</button>
                             <textarea className="dsp-bl" value={module.description} onChange={(e) => dispatch(setModule({...module, description: e.target.value}))} />
                         {/* </li> */}
