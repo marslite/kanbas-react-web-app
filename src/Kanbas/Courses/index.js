@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { useParams, Navigate, Route, Routes } from "react-router";
 import db from "../../Kanbas/Database";
 import "./index.css"
@@ -12,13 +13,25 @@ import AssignmentEditor from "./Assignments/AssignmentsEditor";
 import AssEdit from "./Assignments/AssignmentsEditor/assedit";
 // import Grades from "./Grades";
 import Grades from "../../Kanbas/Grades"
+import axios from "axios";
 
 
-function Courses({courses}){
+
+function Courses(){
     const {courseId} = useParams();
+    const [course, setCourse] = useState({});
     const {pathname} = useLocation();
-    const course = courses.find((course) => course._id === courseId);
     const path = pathname.split('/');
+
+    const URL = "http://localhost:4000/api/courses";
+
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(`${URL}/${courseId}`);
+        setCourse(response);
+        console.log(response, "HEEERE")
+    }
+    
+    useEffect(() => {findCourseById(courseId);}, [courseId])
     console.log(path[4], "here");
 
 
