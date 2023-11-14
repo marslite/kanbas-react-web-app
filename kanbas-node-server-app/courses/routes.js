@@ -1,11 +1,23 @@
+// import App from "../../src/App.js";
 import Database from "../Database/index.js";
 
 function CourseRoutes(app){
+
+    app.get("/api/courses/:id", (req,res) => {
+        const {id} = req.params;
+        const course = Database.courses.find( (c) => c._id === id);
+        if(!course){
+            res.status(404).send("Course Not Found");
+            return;
+        }
+        res.send(course);
+    })
 
     app.put("/api/courses/:id", (req,res) => {
         //Implemented following Prof's Lecture
         const {id} = req.params;
         const course = req.body;
+        console.log(course, "Is this form here?")
         Database.courses = Database.courses.map( (c) => c._id === id ? {...course} : c);
         res.sendStatus(204)
     } )
