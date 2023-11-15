@@ -12,6 +12,8 @@ import {AiOutlineCheckCircle} from "react-icons/ai"
 import { useSelector, useDispatch } from "react-redux";
 import{addModule, deleteModule, updateModule, setModule, setModules} from "./modulesReducer"
 
+import * as client from "./client"
+
 import { findModulesForCourse, createModule } from "./client";
 
 
@@ -29,6 +31,10 @@ function ModuleList(){
 
     const handleAddModule = () => {
         createModule(courseId, module).then( (module) => {dispatch(addModule(module))} )
+    }
+
+    const handleDeleteModule = (moduleId) => {
+        client.deleteModule(moduleId).then( (status) => {dispatch(deleteModule(moduleId))})
     }
 
 
@@ -128,7 +134,7 @@ function ModuleList(){
                                 <li key={index} className="list-group-item list-group-item-secondary spac">
                                     <div className="flt_edt dsp-ln">
                                     <button className="dlt-edit btn btn-secondary dsp-ln btn-hg" onClick={() => dispatch(setModule(module))}>Update</button>
-                                    <button className="dlt-edit btn btn-danger dsp-ln btn-hg" onClick={() => dispatch(deleteModule(module._id))}>Delete</button>
+                                    <button className="dlt-edit btn btn-danger dsp-ln btn-hg" onClick={ () => handleDeleteModule(module._id)}>Delete</button>
 
                                     </div>
                                     <h3>{module.name}
