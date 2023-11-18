@@ -24,14 +24,7 @@ function Kanbas(){
         findAllCourses();
       }, []);
 
-    // const findAllCourses = async () => {
-    //     const response = await axios.get(URL);
-    //     setCourses(response.data);
-    // }
 
-    // useEffect( () => {
-    //     findAllCourses()
-    // }, [])
 
 
 
@@ -40,21 +33,16 @@ function Kanbas(){
         startDate: "2023-09-10", endDate: "2023-12-15",
     });
 
-    // const addNewCourse = () => {
-    //     setCourses([...courses, {...course, _id: new Date().getTime().toString() } ]);
-    // };
+  
 
 
     const addNewCourse = async () => {
         const response = await axios.post(URL,course);
-        // setCourses([...courses, {...course, _id: new Date().getTime().toString() } ]);
         setCourses([ ...courses,{...response.data, _id: new Date().getTime().toString( )}]);
-        // setCourse({name:""});
     }
 
-    // const deleteCourse = (courseId) => {
-    //     setCourses(courses.filter((course) => course._id !== courseId ));
-    // }
+
+
 
     const deleteCourse = async (id) => {
         const response = await axios.delete(`${URL}/${id}`);

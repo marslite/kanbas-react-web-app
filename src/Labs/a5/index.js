@@ -8,6 +8,15 @@ import QuizBase from "./quizbase";
 
 
 function Assignment5(){
+
+    const alice = {first: 'Alice', last:'Wonderland', salary: 100000}
+    const a = [1,2,3]
+    const e = [4, ...a];
+    const [f] = e;
+    console.log(f)
+
+
+
     return(
         <div>
             <h1>Assignment 5</h1>

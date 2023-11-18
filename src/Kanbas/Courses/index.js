@@ -30,7 +30,7 @@ function Courses(){
         setCourse(response);
         console.log(response, "HEEERE")
     }
-    
+
     useEffect(() => {findCourseById(courseId);}, [courseId])
     console.log(path[4], "here");
 
