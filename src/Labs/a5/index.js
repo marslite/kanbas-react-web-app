@@ -21,7 +21,7 @@ function Assignment5(){
         <div>
             <h1>Assignment 5</h1>
             <div>
-            <a href="http://localhost:4000/a5/welcome" className="list-group-item">Welcome</a>
+            <a href="https://kanbas-node-server-app-zi6l.onrender.com/a5/welcome" className="list-group-item">Welcome</a>
             </div>
             {/* //There is nothing to import here  */}
             {/* <SimpleAPIExamples /> */}
