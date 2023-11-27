@@ -1,8 +1,10 @@
 import axios from "axios";
+import Signin from "./users/signin.js";
+import Account from "./users/account.js"
 import { Route, Routes, Navigate} from "react-router-dom";
 // import Nav from "../Nav";
 import KanbasNavigation from "./KanbasNavigation/index.js";
-import Account from "./Account";
+// import Account from "./Account";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
 import db from "./Database"
@@ -14,8 +16,8 @@ function Kanbas(){
 
     // const  [courses, setCourses] = useState(db.courses);
     const  [courses, setCourses] = useState([]);
-    // const URL = "http://localhost:4000/api/courses";
-    const URL = "https://kanbas-node-server-app-zi6l.onrender.com/api/courses"
+    const URL = "http://localhost:4000/api/courses";
+    // const URL = "https://kanbas-node-server-app-zi6l.onrender.com/api/courses"
 
     const findAllCourses = async () => {
         const response = await axios.get(URL);
@@ -91,6 +93,8 @@ function Kanbas(){
         <div>
         <Routes>
             <Route  path="/" element={<Navigate to="dashboard"/>} />
+            <Route path="/signin" element={<Signin/>} />
+            <Route path="/account" element={<Account/>} />
             <Route  path="account" element={<h1>Account</h1>} />
             <Route  path="dashboard" element={<Dashboard course = {course} courses={courses} setCourse={setCourse} addNewCourse={addNewCourse} deleteCourse={deleteCourse} updateCourse={updateCourse} />} />
             <Route  path="courses/:courseId/*" element={ <Courses courses={courses}/>} /> 

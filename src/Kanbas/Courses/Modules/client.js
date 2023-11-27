@@ -1,11 +1,11 @@
 import axios from "axios";
 //Using URL instead of COURSES_URL 
-// const URL = "http://localhost:4000/api/courses";
-const URL = "https://kanbas-node-server-app-zi6l.onrender.com/api/courses";
+const URL = "http://localhost:4000/api/courses";
+// const URL = "https://kanbas-node-server-app-zi6l.onrender.com/api/courses";
 // const URL = 'https://kanbas-node-server-app-zi6l.onrender.com/api/courses'
 // const URL = "https://kanbas-node-server-app-zi6l.onrender.com/api/courses";
-// const MODULES_URL = "http://localhost:4000/api/modules"
-const MODULES_URL = "https://kanbas-node-server-app-zi6l.onrender.com/api/modules"
+const MODULES_URL = "http://localhost:4000/api/modules"
+// const MODULES_URL = "https://kanbas-node-server-app-zi6l.onrender.com/api/modules"
 // const MODULES_URL = 'https://kanbas-node-server-app-zi6l.onrender.com/api/modules'
 
 
