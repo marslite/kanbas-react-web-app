@@ -56,7 +56,7 @@ function Account(){
 
                     <button className="btn btn-primary mt-1 w-100 " onClick={save}>Save</button>
                     {/* <button className="btn btn-warning mt-1 " onClick={save}>Users</button> */}
-                    <Link  to="/kanbas/users" className="btn btn-warning mt-1 w-100"  >Users</Link>
+                    <Link  to="/kanbas/admin/users" className="btn btn-warning mt-1 w-100"  >Users</Link>
 
                  </div>
 

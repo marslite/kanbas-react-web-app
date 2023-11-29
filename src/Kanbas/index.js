@@ -97,7 +97,8 @@ function Kanbas(){
             <Route path="/signin" element={<Signin/>} />
             <Route path="/account" element={<Account/>} />
             <Route  path="account" element={<h1>Account</h1>} />
-            <Route  path="/users" element={<UserTable />} />
+            <Route  path="/admin/users" element={<UserTable />} />
+
 
             <Route  path="dashboard" element={<Dashboard course = {course} courses={courses} setCourse={setCourse} addNewCourse={addNewCourse} deleteCourse={deleteCourse} updateCourse={updateCourse} />} />
             <Route  path="courses/:courseId/*" element={ <Courses courses={courses}/>} /> 
