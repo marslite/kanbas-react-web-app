@@ -1,7 +1,9 @@
 import * as client from "./client"
 import "../../Kanbas/users/account.css"
 
+import UserTable from "./table"
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
 
 function Account(){
@@ -52,13 +54,19 @@ function Account(){
                         <option value="STUDENT">Student</option>
                     </select>
 
-                    <button onClick={save}>Save</button>
+                    <button className="btn btn-primary mt-1 w-100 " onClick={save}>Save</button>
+                    {/* <button className="btn btn-warning mt-1 " onClick={save}>Users</button> */}
+                    <Link  to="/kanbas/users" className="btn btn-warning mt-1 w-100"  >Users</Link>
 
                  </div>
-            ) }
+
+                ) }
+                {/* {account && (
+                    <UserTable/>
+                )} */}
+
 
    
-
         </div>
     );
 }

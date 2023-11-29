@@ -7,6 +7,7 @@ import KanbasNavigation from "./KanbasNavigation/index.js";
 // import Account from "./Account";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
+import UserTable from "./users/table.js";
 import db from "./Database"
 import { useEffect, useState } from "react";
 import store from "./store";
@@ -96,6 +97,8 @@ function Kanbas(){
             <Route path="/signin" element={<Signin/>} />
             <Route path="/account" element={<Account/>} />
             <Route  path="account" element={<h1>Account</h1>} />
+            <Route  path="/users" element={<UserTable />} />
+
             <Route  path="dashboard" element={<Dashboard course = {course} courses={courses} setCourse={setCourse} addNewCourse={addNewCourse} deleteCourse={deleteCourse} updateCourse={updateCourse} />} />
             <Route  path="courses/:courseId/*" element={ <Courses courses={courses}/>} /> 
             
