@@ -1,10 +1,30 @@
 import React, {useState, useEffect} from "react";
-import { BsPlusCircleFill } from "react-icons/bs";
+import { BsPlusCircleFill, BsFillCheckCircleFill, BsPencil, BsTrash3Fill } from "react-icons/bs";
 import * as client from "./client";
 
 function UserTable(){
     const [users, setUsers] = useState([]);
     const [user, setUser] = useState({username: "", password: "", role: "USER", email:""});
+
+    const selectUser = async (user) => {
+        try {
+            const u = await client.findUserById(user._id);
+            setUser(u);
+        } catch (error) {
+            console.log(error)
+            
+        }
+    }
+
+    const updateUser = async () => {
+        try {
+            const status = await client.updateUser(user);
+            setUsers(users.map((u) => (u._id === user._id ? user : u)))
+        } catch (error) {
+            
+        }
+    }
+
     const createUser = async () => {
         try {
             const newUser = await client.createUser(user);
@@ -66,9 +86,12 @@ function UserTable(){
                             </select>
                         </td>
 
-                        <td>
-                            <BsPlusCircleFill onClick={createUser} />
+                        <td className="text-nowrap">
+                            <BsFillCheckCircleFill onClick={updateUser} className="me-2 text-success fs-1 text" />
+                            <BsPlusCircleFill className="text-success fs-1 text" onClick={createUser} />
                         </td>
+
+
                     </tr>
 
 
@@ -82,6 +105,17 @@ function UserTable(){
                             <td>{user.lastName}</td>
                             <td>{user.email}</td>
                             <td>{user.password}</td>
+                            <td className="text-nowrap">
+                            <button className="btn btn-danger me-2">
+                                <BsTrash3Fill onClick={()=> console.log("delete")} />
+                            </button>
+
+                            <button className="btn btn-warning me-2">
+                                    <BsPencil onClick={() => selectUser(user)} />
+
+                             </button>
+
+                        </td>
 
                         </tr>))}
                 </tbody>
