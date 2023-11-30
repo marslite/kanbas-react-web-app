@@ -1,5 +1,6 @@
 import axios from "axios";
 import Signin from "./users/signin.js";
+import Signup from "./users/signup.js";
 import Account from "./users/account.js"
 import { Route, Routes, Navigate} from "react-router-dom";
 // import Nav from "../Nav";
@@ -95,6 +96,7 @@ function Kanbas(){
         <Routes>
             <Route  path="/" element={<Navigate to="dashboard"/>} />
             <Route path="/signin" element={<Signin/>} />
+            <Route path="/signup" element={<Signup/>} />
             <Route path="/account" element={<Account/>} />
             <Route path="/account/:id" element={<Account/>} />
             <Route  path="account" element={<h1>Account</h1>} />
