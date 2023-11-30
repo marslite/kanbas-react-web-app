@@ -16,6 +16,16 @@ function UserTable(){
         }
     }
 
+    const deleteUser = async (user) => {
+        try {
+            await client.deleteUser(user);
+            setUsers(users.filter( (u) => u._id !== user._id) )
+        } catch (error) {
+            console.log(error);
+            
+        }
+    }
+
     const updateUser = async () => {
         try {
             const status = await client.updateUser(user);
@@ -41,6 +51,7 @@ function UserTable(){
         const users = await client.findAllUsers();
         setUsers(users);
     };
+
 
     useEffect( ()=> {
         fetchUsers();
@@ -107,7 +118,7 @@ function UserTable(){
                             <td>{user.password}</td>
                             <td className="text-nowrap">
                             <button className="btn btn-danger me-2">
-                                <BsTrash3Fill onClick={()=> console.log("delete")} />
+                                <BsTrash3Fill onClick={()=> deleteUser(user)} />
                             </button>
 
                             <button className="btn btn-warning me-2">
