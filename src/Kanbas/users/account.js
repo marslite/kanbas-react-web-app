@@ -4,10 +4,15 @@ import "../../Kanbas/users/account.css"
 import UserTable from "./table"
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 
 function Account(){
+    const {id} = useParams();
     const [account, setAccount] = useState(null);
+    const findUserById = async (id) => {
+        const user = await client.findUserById(id);
+        setAccount(user)
+    }
     const navigate = useNavigate();
     const fetchAccount = async() => {
         try {
@@ -25,7 +30,13 @@ function Account(){
     }
 
     useEffect(() => {
-        fetchAccount();
+        if(id){
+            findUserById(id)
+        }else{
+            fetchAccount();
+        }
+
+
     }, [] )
 
     return(
