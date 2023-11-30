@@ -25,6 +25,12 @@ function Account(){
 
     };
 
+    const signout = async () => {
+        console.log(`Succesfully Logged out ${account}` )
+        await client.signout();
+        navigate("/kanbas/signin")
+    }
+
     const save = async () => {
         await client.updateUser(account);
     }
@@ -68,6 +74,7 @@ function Account(){
                     <button className="btn btn-primary mt-1 w-100 " onClick={save}>Save</button>
                     {/* <button className="btn btn-warning mt-1 " onClick={save}>Users</button> */}
                     <Link  to="/kanbas/admin/users" className="btn btn-warning mt-1 w-100"  >Users</Link>
+                    <button className="btn btn-danger mt-1 w-100" onClick={signout}>Logout</button>
 
                  </div>
 
