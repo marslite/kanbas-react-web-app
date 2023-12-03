@@ -18,8 +18,8 @@ function Kanbas(){
 
     // const  [courses, setCourses] = useState(db.courses);
     const  [courses, setCourses] = useState([]);
-    const URL = "http://localhost:4000/api/courses";
-    // const URL = "https://kanbas-node-server-app-zi6l.onrender.com/api/courses"
+    // const URL = "http://localhost:4000/api/courses";
+    const URL = "https://kanbas-node-server-app-zi6l.onrender.com/api/courses"
 
     const findAllCourses = async () => {
         const response = await axios.get(URL);
